@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pollux · Brand kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #F7F3EA;
+      --ink: #1C1A17;
+      --teal: #0F6B5C;
+      --teal-soft: #D8EDE8;
+      --danger: #9B2C2C;
+      --border: #DDD4C4;
+      --canvas: #1A1917;
+      --canvas-2: #24221F;
+      --radius: 8px;
+      --gutter: 14px;
+      --font-display: "Fraunces", Georgia, serif;
+      --font-body: "Source Serif 4", Georgia, serif;
+      --font-ui: "IBM Plex Sans", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background:
+        radial-gradient(1200px 600px at 20% -10%, #2a2824 0%, transparent 55%),
+        var(--canvas);
+      color: var(--paper);
+      font-family: var(--font-ui);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
+
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #a39c90;
+      margin: 0 0 6px;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 650;
+      font-size: clamp(28px, 4vw, 40px);
+      margin: 0;
+      color: var(--paper);
+    }
+
+    .lede {
+      font-family: var(--font-body);
+      color: #c9c2b6;
+      max-width: 38ch;
+      margin: 8px 0 0;
+    }
+
+    .switcher {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .switcher span {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8f877a;
+    }
+
+    .switcher button {
+      appearance: none;
+      border: 1px solid #3c3933;
+      background: var(--canvas-2);
+      color: #d8d1c5;
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      min-height: 44px;
+      font-family: var(--font-ui);
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .switcher button[aria-pressed="true"] {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: var(--paper);
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--gutter);
+    }
+
+    .panel {
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 12px;
+      min-height: 220px;
+      padding: 22px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
+    }
+
+    .panel .label {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #7a7266;
+    }
+
+    .panel .pn {
+      position: absolute;
+      bottom: 12px;
+      right: 14px;
+      font-size: 10px;
+      color: #9a9285;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .panel-cover,
+    .panel-essence,
+    .panel-image {
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+
+    .mark {
+      width: 96px;
+      height: 96px;
+      color: var(--teal);
+    }
+
+    .wordmark {
+      margin-top: 14px;
+      font-family: var(--font-display);
+      font-size: 34px;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .build-grid {
+      width: min(100%, 180px);
+      margin: 36px auto 0;
+      display: block;
+    }
+
+    .phone {
+      width: min(100%, 168px);
+      margin: 34px auto 0;
+      background: #fffdf8;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px 12px 16px;
+      text-align: left;
+      box-shadow: 0 10px 24px rgba(28, 26, 23, 0.08);
+    }
+
+    .phone .chrome {
+      height: 8px;
+      border-radius: 999px;
+      background: var(--border);
+      width: 42%;
+      margin: 0 auto 14px;
+    }
+
+    .phone h3 {
+      font-family: var(--font-display);
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+
+    .choice {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 10px 12px;
+      margin-top: 8px;
+      font-family: var(--font-ui);
+      font-size: 12px;
+      text-align: left;
+      color: var(--ink);
+    }
+
+    .choice.on {
+      background: var(--teal-soft);
+      border-color: #b7d9d1;
+    }
+
+    .tagline {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 2.6vw, 30px);
+      font-weight: 650;
+      line-height: 1.2;
+      margin: 0;
+      max-width: 14ch;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 36px;
+    }
+
+    .swatch {
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .swatch .chip {
+      height: 42px;
+    }
+
+    .swatch code {
+      display: block;
+      padding: 6px 8px;
+      font-size: 10px;
+      color: #5c564c;
+    }
+
+    .type-spec {
+      margin-top: 40px;
+    }
+
+    .type-spec .display {
+      font-family: var(--font-display);
+      font-size: 40px;
+      font-weight: 650;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .type-spec .body {
+      font-family: var(--font-body);
+      font-size: 15px;
+      margin: 12px 0 0;
+    }
+
+    .type-spec .ui {
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin: 14px 0 0;
+    }
+
+    .notice {
+      margin-top: 34px;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: left;
+      background: #fffdf8;
+    }
+
+    .notice strong {
+      font-family: var(--font-display);
+      font-size: 16px;
+    }
+
+    .notice p {
+      font-family: var(--font-body);
+      font-size: 13px;
+      margin: 8px 0 0;
+      color: #3d3932;
+    }
+
+    .stamp-mini {
+      width: 36px;
+      height: 36px;
+      color: var(--teal);
+      float: right;
+      margin-left: 8px;
+    }
+
+    .image-panel {
+      background:
+        linear-gradient(180deg, rgba(247,243,234,0.18), rgba(247,243,234,0.82)),
+        radial-gradient(circle at 30% 20%, #d8ede8 0%, transparent 40%),
+        linear-gradient(135deg, #cfc4af, #e7dfd0 45%, #b7aea0);
+    }
+
+    .image-panel .caption {
+      font-family: var(--font-display);
+      font-size: 20px;
+      max-width: 16ch;
+      margin: 0;
+    }
+
+    .system {
+      margin-top: 38px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--teal-soft);
+      color: var(--teal);
+      border-radius: var(--radius);
+      padding: 8px 10px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .btn {
+      background: var(--teal);
+      color: var(--paper);
+      border: 0;
+      border-radius: var(--radius);
+      min-height: 44px;
+      padding: 0 16px;
+      font-family: var(--font-ui);
+      font-weight: 600;
+    }
+
+    .ghost {
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--ink);
+      border-radius: var(--radius);
+      min-height: 44px;
+      padding: 0 14px;
+      font-family: var(--font-ui);
+    }
+
+    .focus-demo:focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px;
+    }
+
+    .deck {
+      margin-top: 28px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #33302b;
+      background: var(--canvas-2);
+    }
+
+    .deck img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .deck figcaption {
+      padding: 12px 16px;
+      color: #a59d90;
+      font-size: 12px;
+    }
+
+    .meta {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--canvas-2);
+      border: 1px solid #33302b;
+      border-radius: 12px;
+      padding: 18px 18px 16px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 650;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #c7bfb2;
+    }
+
+    .card li { margin: 6px 0; }
+
+    .tokens {
+      font-family: ui-monospace, "IBM Plex Mono", monospace;
+      font-size: 12px;
+      color: #bdb5a8;
+    }
+
+    .tokens div {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 6px 0;
+      border-bottom: 1px solid #2f2c27;
+    }
+
+    @media (max-width: 900px) {
+      .board { grid-template-columns: 1fr 1fr; }
+      .meta { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .board { grid-template-columns: 1fr; }
+    }
+
+    [data-mark="twin"] .mark-a { display: none; }
+    [data-mark="stamp"] .mark-b { display: none; }
+  </style>
+</head>
+<body data-mark="stamp">
+  <div class="page">
+    <header class="top">
+      <div>
+        <p class="eyebrow">Pollux · Identity system · Draft 0.1</p>
+        <h1>Brand kit</h1>
+        <p class="lede">Barangay bulletin calm. Teal stamp ink. Spot the trick, then share a pack people can trust.</p>
+      </div>
+      <div class="switcher" role="group" aria-label="Logo mark variant">
+        <span>Mark</span>
+        <button type="button" id="mark-stamp" aria-pressed="true">A · Stamp</button>
+        <button type="button" id="mark-twin" aria-pressed="false">B · Twin star</button>
+      </div>
+    </header>
+
+    <section class="board" aria-label="Brand board">
+      <article class="panel panel-cover">
+        <span class="label">01 Cover</span>
+        <div>
+          <svg class="mark mark-a" viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="44" fill="none" stroke="currentColor" stroke-width="3.5"/>
+            <circle cx="48" cy="48" r="36" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.55"/>
+            <path d="M34 66 V30 h18c9 0 15 5.5 15 14s-6 14-15 14H42 v8z M42 42 h8c3.8 0 6.5-2 6.5-5.5S53.8 31 50 31H42z" fill="currentColor"/>
+            <circle cx="66" cy="28" r="2.2" fill="currentColor"/>
+            <circle cx="72" cy="34" r="1.5" fill="currentColor"/>
+          </svg>
+          <svg class="mark mark-b" viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="44" fill="none" stroke="currentColor" stroke-width="3.5"/>
+            <path d="M34 54 L48 22 L62 54 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M40 58 L48 40 L56 58 Z" fill="currentColor"/>
+            <circle cx="30" cy="66" r="2" fill="currentColor"/>
+            <circle cx="66" cy="66" r="2" fill="currentColor"/>
+          </svg>
+          <div class="wordmark">Pollux</div>
+        </div>
+        <span class="pn">01 / 09</span>
+      </article>
+
+      <article class="panel">
+        <span class="label">02 Construction</span>
+        <svg class="build-grid" viewBox="0 0 180 140" aria-hidden="true">
+          <circle cx="90" cy="70" r="52" fill="none" stroke="#0F6B5C" stroke-width="2"/>
+          <circle cx="90" cy="70" r="40" fill="none" stroke="#0F6B5C" stroke-width="1" stroke-dasharray="3 3" opacity="0.7"/>
+          <line x1="90" y1="10" x2="90" y2="130" stroke="#DDD4C4" />
+          <line x1="30" y1="70" x2="150" y2="70" stroke="#DDD4C4" />
+          <path class="mark-a" d="M72 92 V48 h14c8 0 12 4 12 10.5S94 69 86 69H78 v8z" fill="#0F6B5C"/>
+          <g class="mark-b">
+            <path d="M72 86 L90 42 L108 86 Z" fill="none" stroke="#0F6B5C" stroke-width="2.5"/>
+            <path d="M80 90 L90 68 L100 90 Z" fill="#0F6B5C"/>
+          </g>
+          <text x="90" y="132" text-anchor="middle" fill="#7a7266" font-size="9" font-family="IBM Plex Sans, sans-serif">Ø stamp · twin cut</text>
+        </svg>
+        <span class="pn">02 / 09</span>
+      </article>
+
+      <article class="panel">
+        <span class="label">03 Product</span>
+        <div class="phone">
+          <div class="chrome"></div>
+          <h3>Spot the trick</h3>
+          <button class="choice" type="button">Sounds urgent, no proof</button>
+          <button class="choice on" type="button">Asks you to forward now</button>
+        </div>
+        <span class="pn">03 / 09</span>
+      </article>
+
+      <article class="panel panel-essence">
+        <span class="label">04 Essence</span>
+        <p class="tagline">Spot the trick. Share the pack.</p>
+        <span class="pn">04 / 09</span>
+      </article>
+
+      <article class="panel">
+        <span class="label">05 Color</span>
+        <div class="swatches">
+          <div class="swatch"><div class="chip" style="background:#F7F3EA"></div><code>paper #F7F3EA</code></div>
+          <div class="swatch"><div class="chip" style="background:#1C1A17"></div><code>ink #1C1A17</code></div>
+          <div class="swatch"><div class="chip" style="background:#0F6B5C"></div><code>teal #0F6B5C</code></div>
+          <div class="swatch"><div class="chip" style="background:#D8EDE8"></div><code>teal-soft</code></div>
+          <div class="swatch"><div class="chip" style="background:#DDD4C4"></div><code>border</code></div>
+          <div class="swatch"><div class="chip" style="background:#9B2C2C"></div><code>danger</code></div>
+        </div>
+        <span class="pn">05 / 09</span>
+      </article>
+
+      <article class="panel">
+        <span class="label">06 Type</span>
+        <div class="type-spec">
+          <p class="display">Pollux</p>
+          <p class="body">Finish the trick. Share the pack your kapitbahay can trust.</p>
+          <p class="ui">IBM Plex Sans · UI / labels</p>
+        </div>
+        <span class="pn">06 / 09</span>
+      </article>
+
+      <article class="panel">
+        <span class="label">07 Print</span>
+        <div class="notice">
+          <svg class="stamp-mini mark-a" viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="44" fill="none" stroke="currentColor" stroke-width="6"/>
+            <path d="M34 66 V30 h18c9 0 15 5.5 15 14s-6 14-15 14H42 v8z M42 42 h8c3.8 0 6.5-2 6.5-5.5S53.8 31 50 31H42z" fill="currentColor"/>
+          </svg>
+          <svg class="stamp-mini mark-b" viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="44" fill="none" stroke="currentColor" stroke-width="6"/>
+            <path d="M34 54 L48 22 L62 54 Z" fill="none" stroke="currentColor" stroke-width="5"/>
+            <path d="M40 58 L48 40 L56 58 Z" fill="currentColor"/>
+          </svg>
+          <strong>Flood pack · Balangay East</strong>
+          <p>Verified routes only. Published by your SK information officer. No blast messaging required.</p>
+        </div>
+        <span class="pn">07 / 09</span>
+      </article>
+
+      <article class="panel panel-image image-panel">
+        <span class="label">08 Atmosphere</span>
+        <p class="caption">Paper notices. Teal stamp. Daylight desk.</p>
+        <span class="pn">08 / 09</span>
+      </article>
+
+      <article class="panel">
+        <span class="label">09 System</span>
+        <div class="system">
+          <span class="badge">● published</span>
+          <button class="btn focus-demo" type="button">Share link</button>
+          <button class="ghost focus-demo" type="button">Continue</button>
+        </div>
+        <span class="pn">09 / 09</span>
+      </article>
+    </section>
+
+    <figure class="deck">
+      <img src="assets/brand/pollux-brandkit-overview.png" alt="Pollux brand-kit overview board, nine-panel identity grid" width="1600" height="1200" />
+      <figcaption>Studio board render · assets/brand/pollux-brandkit-overview.png · throwaway prototype for mark selection</figcaption>
+    </figure>
+
+    <section class="meta">
+      <div class="card">
+        <h2>Strategy lock</h2>
+        <ul>
+          <li>Category: civic inoculation for youth leaders, not ad-tech trust chrome.</li>
+          <li>Metaphor: barangay stamp × twin star (Pollux as clear sight).</li>
+          <li>Promise: spot manipulation tricks, publish packs neighbors can trust.</li>
+          <li>Forbidden: purple SaaS glow, confetti streaks, Meltwater dashboards.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Tokens (DSD)</h2>
+        <div class="tokens">
+          <div><span>--color-paper</span><span>#F7F3EA</span></div>
+          <div><span>--color-ink</span><span>#1C1A17</span></div>
+          <div><span>--color-teal</span><span>#0F6B5C</span></div>
+          <div><span>--color-teal-soft</span><span>#D8EDE8</span></div>
+          <div><span>--color-border</span><span>#DDD4C4</span></div>
+          <div><span>--radius</span><span>8px</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const root = document.body;
+    const stampBtn = document.getElementById("mark-stamp");
+    const twinBtn = document.getElementById("mark-twin");
+
+    function setMark(which) {
+      root.dataset.mark = which;
+      stampBtn.setAttribute("aria-pressed", String(which === "stamp"));
+      twinBtn.setAttribute("aria-pressed", String(which === "twin"));
+    }
+
+    stampBtn.addEventListener("click", () => setMark("stamp"));
+    twinBtn.addEventListener("click", () => setMark("twin"));
+  </script>
+</body>
+</html>
