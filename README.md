@@ -39,7 +39,7 @@ python D:/PROJECTS/FMD/scripts/check.py .
 | [OPS](docs/ops-pollux.md) | Runbook, SLOs, rollback |
 | [Index](docs/index.md) | Full doc manifest |
 
-**Bootstrap doctrine:** no paid messaging until a buyer funds it; free-tier host for pre-revenue; commercial pilots need Vercel Pro or Cloudflare Pages. See OPS and IDEA.
+**Bootstrap doctrine:** no paid messaging until a buyer funds it; free-tier host for pre-revenue; commercial pilots use Cloudflare Pages/Workers. See OPS and IDEA.
 
 **Living design files:** `BRAND.md` / `DESIGN.md` when DSD materializes.
 

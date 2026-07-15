@@ -20,7 +20,7 @@
 - UES / BUILD: Vercel Hobby is personal/non-commercial; commercial pilots need Pro (~$20/seat) or alternate host (Cloudflare). Revise "$0-20/mo" burn to pre-revenue vs commercial tiers.
 - CLR: Youth users and SK leaders imply minors and PII; register consent, age gates, and NPC/DPA posture.
 - AIA: Optional LLM coaching stays off critical path; rule-based game is primary. Mark open-web RAG as forbidden.
-- PRD: First pilot LGU and bot channel (Telegram vs Messenger) remain TBD.
+- PRD: First pilot LGU remains TBD (G-1). Bot channel locked Telegram (G-4). LLM post-MVP (G-5). Host Cloudflare when commercial (G-3).
 - GTM: UNESCO remains optional distribution, not a revenue plan.
 
 ---
@@ -58,12 +58,12 @@ IDEA names World Bank Find the Fake by description without a URL. Audited agains
 
 | # | Missing input | Needed by (doc) | Blocker or TBD |
 |---|---------------|-----------------|----------------|
-| G-1 | Named first pilot org (LGU / SK federation) | GTM, VALIDATION | TBD |
-| G-2 | Age gate and parental consent policy for under-18 | CLR | TBD (not Blocker for docs; Blocker for public launch) |
-| G-3 | Commercial hosting choice when leaving Hobby | BUILD, UES, OPS | TBD |
-| G-4 | Bot adapter priority (Telegram vs Messenger) | SDD, RFC | TBD |
-| G-5 | Whether LLM coaching ships in v1 | AIA, PRD, UES | TBD |
-| G-6 | Content pack authoring workflow and approval chain | PRD, SDD | TBD |
+| G-1 | Named first pilot org (LGU / SK federation) | GTM, VALIDATION | Stale / TBD |
+| G-2 | Age gate and parental consent policy for under-18 | CLR | Audience decided (includes minors). Consent/PIA policy still TBD; **Blocker for public launch** |
+| G-3 | Commercial hosting choice when leaving Hobby | BUILD, UES, OPS | **Resolved: Cloudflare** (Pages/Workers) for commercial pilots |
+| G-4 | Bot adapter priority (Telegram vs Messenger) | SDD, RFC | **Resolved: Telegram first**; Messenger Could-Have |
+| G-5 | Whether LLM coaching ships in v1 | AIA, PRD, UES | **Resolved: post-MVP**; flag off; rule-based path only for MVP |
+| G-6 | Content pack authoring workflow and approval chain | PRD, SDD | Stale / TBD (leader publish + version pin until tightened) |
 
 ---
 

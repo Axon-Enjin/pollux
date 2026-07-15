@@ -49,11 +49,11 @@
 | Lesson rule engine + UI | 1-2 weeks | Content quality |
 | Packs + admin lite | 1 week | Approval workflow ambiguity |
 | Auth + roles | 3-5 days | Supabase free pause |
-| Telegram adapter | Optional later | Channel TBD |
+| Telegram adapter | After MVP core (Should-Have) | **Telegram first** (G-4); not MVP-blocking |
 
-**Biggest technical unknown:** Whether LGU buyers accept a PWA without WhatsApp reach.
+**Biggest commercial unknown:** Whether LGU buyers accept a PWA without WhatsApp blast reach (Scrutiny load-bearing assumption; not a pure tech risk).
 
-**Mitigation:** Pilot with one SK federation; sell measurable completion + discernment quiz, not blast reach.
+**Mitigation:** Pilot with one SK federation; sell measurable completion + discernment pre/post, not blast reach. Prefer B2G project pricing ($4k first paid). Telegram user-initiated bot is a later distribution hedge.
 
 ---
 
@@ -65,7 +65,7 @@
 | First pilot refuses curated packs / demands open AI Q&A on crisis | Pivot (hold line or stop LGU path) |
 | Commercial host cost exceeds contribution before first paid seat (UES-D1) | Stop paid growth; stay prototype on Hobby |
 
-**Decision:** Go; pedagogy and bootstrap doctrine hold. Distribution and pricing remain TBDs in GTM/UES.
+**Decision:** Go; pedagogy and bootstrap doctrine hold. Pricing and host locked provisional in GTM/UES (2026-07-15). Distribution WTP and named pilot (G-1) remain open.
 
 ---
 

@@ -84,11 +84,11 @@
 
 ## 6. Open Questions
 
-| Question | Owner | Resolve by |
-|----------|-------|------------|
-| First pilot LGU or SK federation for content pack | Founders | Before GTM lock |
-| Telegram vs Messenger for first bot adapter | Eng | Before SDD lock |
-| Whether optional LLM coaching ships in v1 or waits | Product | Before AIA lock |
+| Question | Owner | Status | Resolve by |
+|----------|-------|--------|------------|
+| First pilot LGU or SK federation for content pack | Founders | Stale (open) | Before GTM lock |
+| Telegram vs Messenger for first bot adapter | Eng | **Resolved: Telegram first** | Done (2026-07-15) |
+| Whether optional LLM coaching ships in v1 or waits | Product | **Resolved: post-MVP; flag off** | Done (2026-07-15) |
 
 ---
 

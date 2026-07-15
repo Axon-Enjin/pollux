@@ -35,7 +35,9 @@
 - *Who:* Enterprise L&D / trust-and-safety buyers
 - *Why secondary:* Longer sales cycle; needs analytics dashboards beyond v1
 
-**TBD (Scrutiny):** First named pilot org.
+**TBD (Scrutiny G-1):** First named pilot org (stale / open).
+
+**Unit hierarchy:** B2G project fee is the primary ACV for first revenue. B2B seats are renewal/attach (min 50 seats). Do not quote seats alone for an LGU pilot under ~50 learners.
 
 ---
 
@@ -45,13 +47,16 @@
 
 | Tier | Price | What's Included | Limit / Gate |
 |------|-------|-----------------|-------------|
-| Community pilot | $0 (invite) | Lesson + 1 pack | Time-boxed; data shared for learning |
-| B2G project | TBD (UES-E1) | Deployment + packs + training | Scoped barangays |
-| B2B seats | TBD $8-20/seat-year (UES-E1) | Lesson access + admin | Seat count |
+| Community pilot | $0 (invite) | Lesson + 1 pack | Time-boxed; data shared for learning; exit path to paid terms at kickoff |
+| B2G project (first paid) | **$4,000 USD** (UES-E1) | Deployment + 1 localized pack + admin training + completion report | Scoped barangays / one SK or LGU office |
+| B2G project (city / multi-barangay) | $8,000–12,000 | More packs + facilitator days | Still inside UES $2k–15k band |
+| B2B seats | **$12 / seat-year** list; floor $8 NGO; $18–20 enterprise | Lesson access + admin | Min **50** seats |
 
-**Pricing rationale:** Trace to UES-E1/E3. Do not underprice below commercial hosting (UES-F4). Honor UES-D1.
+**Pricing rationale:** Trace to UES-E1/E3. Primary cash is project fees. Seats alone at small pilot scale may not cover founder content time even when Cloudflare hosting is cheap (UES-F4). Honor UES-D1. Free community pilot must name a paid conversion path at kickoff (price lock or LOI date).
 
-**Payment processor:** TBD (invoice / grant first; Stripe later)
+**Payment processor:** Invoice / grant first; Stripe later
+
+**Commercial host:** Cloudflare Pages/Workers before first paid invoice (Scrutiny G-3).
 
 ---
 
@@ -108,7 +113,7 @@
 |-------|------------------|-------------|------|
 | **Alpha** | PRD Must-Haves coded; QAD happy path | TBD | 5-10 learners + 1 leader |
 | **Beta** | Alpha feedback; no P0; CLR counsel flags tracked | TBD | 1 LGU/SK pilot pack live |
-| **Public Launch** | CLR cleared for youth data; pricing live; UES-F4 commercial host | TBD | First paid pilot (BRD-M1) |
+| **Public Launch** | CLR cleared for youth data; pricing live ($4k / $12 seats); UES-F4 Cloudflare commercial host | TBD | First paid pilot (BRD-M1) |
 | **Post-launch** | Paid pilot live | TBD | Second LOI; decide TrustOps phase |
 
 ---
@@ -119,7 +124,7 @@
 |--------|--------|--------|----------------|
 | BRD-M1 | Paying pilots / LOIs | 1 | CRM / signed note |
 | BRD-M2 | Lesson completion | ≥60% | `lesson_completed` / `lesson_started` |
-| BRD-M3 | Product burn | Within UES hosting doctrine | Invoice / Vercel bill |
+| BRD-M3 | Product burn | Within UES hosting doctrine | Invoice / Cloudflare (or host) bill |
 
 ---
 

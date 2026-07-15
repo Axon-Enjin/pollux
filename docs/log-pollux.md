@@ -22,6 +22,7 @@
 | 7 | 2026-07-15T13:10:00Z | Write QAD SAD CLR AIA OPS README | launch templates | docs/qad,sad,clr,aia,ops + README.md | Draft v0.1 | not run |
 | 8 | 2026-07-15T13:20:00Z | Recover VAL BRD UES GTM PRD DSD after API limit | business/product templates | docs/val,brd,ues,gtm,prd,dsd-pollux.md | Draft v0.1 | not run |
 | 9 | 2026-07-15T13:35:00Z | check.py scale full | check.py | voice dash fixes; materialize BRAND/DESIGN/AGENTS | green | 0 fail 0 warn |
+| 10 | 2026-07-15T15:38:00Z | Decision register write-back | n/a | IDEA PRD SCRUTINY GTM UES VAL CLR AIA BRD SDD OPS RFC BUILD README index | G-3/4/5 + pricing locked; G-1/G-6 stale | 0 fail 0 warn |
 
 ---
 

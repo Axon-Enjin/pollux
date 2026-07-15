@@ -47,7 +47,7 @@
 |-----------|-----------|-------|
 | Basic PII (name, email) | Yes | email at auth; display name optional |
 | Special-category / sensitive | Possible | crisis packs may be health-adjacent (flood, disease); content is curated facts, not clinical records. Flag for counsel. |
-| Children's data (under 16 EU / under 13 COPPA) | TBD / likely | Youth / SK audience includes possible minors. Age gate + parental consent **TBD**. Blocker for public school/LGU launch. |
+| Children's data (under 16 EU / under 13 COPPA) | Yes (audience decided) | Product serves **all ages including under-18**. Age gate + parental consent + school rules still **TBD with counsel**. Blocker for public school/LGU launch. |
 | Precise location | No | Not collected in v1 |
 | Photos / camera / microphone | No | |
 | Device IDs / advertising IDs | No | No ad network in v1 |
@@ -95,7 +95,7 @@
 
 | Flag | Present? | Why it escalates |
 |------|----------|------------------|
-| Children's data | **Yes (TBD policy)** | Youth / SK users may be minors. Age gate, parental consent, and school deployment rules need counsel before public launch. |
+| Children's data | **Yes (audience locked; policy TBD)** | Under-18 learners are in scope. Age gate, parental consent, and school deployment rules need counsel before public launch. |
 | Health / medical data | Possible | Crisis packs may include health-adjacent guidance; not a clinical product, but counsel on framing |
 | Payments / card data | No | |
 | Biometric data | No | |

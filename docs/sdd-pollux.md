@@ -8,13 +8,13 @@
 **Last reconciled:** N/A (not yet reconciled with code)
 **PRD:** [prd-pollux.md](prd-pollux.md) (provisional feature IDs until PRD lands)
 
-> Prerequisite: [idea-pollux.md](idea-pollux.md), [scrutiny-pollux.md](scrutiny-pollux.md). Downstream: [rfc-pollux-channel-packs.md](rfc-pollux-channel-packs.md), [build-pollux.md](build-pollux.md). Scrutiny fixes carried: Hobby vs commercial host (G-3), Telegram first bot adapter (G-4), pack publish workflow (G-6), LLM off critical path.
+> Prerequisite: [idea-pollux.md](idea-pollux.md), [scrutiny-pollux.md](scrutiny-pollux.md). Downstream: [rfc-pollux-channel-packs.md](rfc-pollux-channel-packs.md), [build-pollux.md](build-pollux.md). Scrutiny fixes carried: commercial host **Cloudflare** (G-3), Telegram first bot (G-4), LLM **post-MVP** (G-5), pack publish workflow still open (G-6).
 
 ---
 
 ## 1. Architectural Vision & Principles
 
-**Architecture style:** Serverless monolith on Vercel. Next.js App Router (server components, route handlers, server actions). Supabase for Postgres and Auth. Optional Telegram webhook as a thin channel adapter.
+**Architecture style:** Serverless monolith (Next.js App Router: server components, route handlers, server actions). Supabase for Postgres and Auth. Deploy prototype on Vercel Hobby or Cloudflare Pages; **commercial pilots on Cloudflare Pages/Workers**. Optional Telegram webhook as a thin channel adapter (after MVP core).
 
 **Guiding principles:**
 - Server-side first. Roles, pack publish, and scoring run on the server. The client never owns truth.
@@ -26,7 +26,7 @@
 **Key trade-offs made:**
 - Single Supabase Postgres project for v1. Read replicas are debt past ~1k DAU.
 - No job queue for v1. Lesson scoring is sync. Pack publish is a transactional status flip. Optional LLM coaching (flag off) stays request-scoped or waits for a later CR.
-- Vercel Hobby only for non-commercial prototypes. Commercial pilots move to Vercel Pro (~$20) or Cloudflare Pages+Workers before paid use (Scrutiny FC-6 / G-3).
+- Vercel Hobby only for non-commercial prototypes. Commercial pilots move to **Cloudflare Pages+Workers** before paid use (Scrutiny FC-6 / G-3 locked). Vercel Pro is the alternate.
 - RBAC is three roles (`learner`, `leader`, `admin`), not a full permission matrix.
 
 ---
@@ -55,7 +55,7 @@ graph TD
 | API / Gateway | Next.js route handlers + server actions | Authz, Zod validation, role checks, webhook verify |
 | Service / Compute | Pure TypeScript modules in `lib/` | Rule engine, pack publish/read, share-link mint, channel adapters |
 | Data | Supabase Postgres + Auth | Users/roles, lessons, attempts, packs, watch keywords, share links |
-| Infrastructure | Vercel (app) + Supabase (data/auth); Telegram Bot API optional | Hosting; commercial host upgrade when leaving Hobby |
+| Infrastructure | Cloudflare Pages/Workers (commercial) or Vercel Hobby (proto) + Supabase (data/auth); Telegram Bot API after MVP | Hosting; G-3 Cloudflare when monetizing |
 
 ### Traceability to PRD features
 
@@ -256,13 +256,13 @@ Enforced with Postgres RLS and an explicit server role check before mutations. C
 ## 6. Infrastructure, CI/CD & Deployment
 
 **Hosting:**
-- Pre-revenue / non-commercial prototype: Vercel Hobby + Supabase free
-- Commercial pilot: Vercel Pro or Cloudflare Pages + Workers (choose before first paid invoice; Scrutiny G-3)
+- Pre-revenue / non-commercial prototype: Vercel Hobby or Cloudflare free tier + Supabase free
+- Commercial pilot: **Cloudflare Pages + Workers** before first paid invoice (Scrutiny G-3); Vercel Pro alternate
 
 **Environments:**
 - `dev`: local Next.js + Supabase local or dedicated dev project
-- `staging`: Vercel preview per PR
-- `prod`: Vercel production + Supabase prod (Hobby only while non-commercial)
+- `staging`: preview deploy per PR (Cloudflare or Vercel)
+- `prod`: Cloudflare production (or Vercel Pro if chosen) + Supabase prod (Hobby only while non-commercial)
 
 **CI/CD:** GitHub Actions: lint → typecheck → test → preview deploy. Production on tagged release.
 

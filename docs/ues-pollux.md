@@ -15,6 +15,8 @@
 
 **The unit:** One B2B learner seat-year, or one B2G municipal deployment project
 
+**Unit hierarchy (2026-07-15):** B2G project is the primary ACV for first paid pilots. B2B seats are renewal/attach (list $12/seat-year, min 50). Do not treat seats as standalone default-alive math at miniature pilot scale.
+
 **Who pays:** LGU / NGO / enterprise buyer (not the learner via D2C)
 
 **Margin thesis:** Growth funded by contribution from seats and projects. No paid messaging or enterprise listening until a buyer funds it.
@@ -43,7 +45,7 @@
 | UES-D7 | Capital Gains | Bootstrap default; raise only on §6 triggers | §6 | Pass |
 | UES-D8 | User Centric, Tailored | Primary: PH youth leaders / SK buyers | §5 | Pass |
 
-**Bootstrap hosting rule (Scrutiny fix):** Vercel Hobby is non-commercial only (https://vercel.com/docs/plans/hobby). Pre-revenue prototype may use Hobby + Supabase free. Commercial pilots require Vercel Pro (~$20/seat/mo) or Cloudflare Pages. Do not advertise "$0 forever" for a monetized product.
+**Bootstrap hosting rule (Scrutiny fix):** Vercel Hobby is non-commercial only (https://vercel.com/docs/plans/hobby). Pre-revenue prototype may use Hobby + Supabase free. **Commercial pilots use Cloudflare Pages/Workers** (G-3 locked 2026-07-15). Vercel Pro remains an alternate if Cloudflare is blocked. Do not advertise "$0 forever" for a monetized product.
 
 **Asset allocation (UES-D2):**
 
@@ -69,10 +71,10 @@ Formulas verified against Stripe unit-economics guidance (checked 2026-07-15).
 
 | ID | Metric | Value | Status | Notes |
 |----|--------|-------|--------|-------|
-| UES-E1 | Revenue per unit | B2B TBD $8-20/seat-year; B2G project TBD $2k-15k | Yellow | Set in pilot negotiation |
-| UES-E2 | Variable cost per unit | ~$0 messaging; infra pennies; payment fees TBD | Green | Doctrine forbids SMS/templates at our cost |
-| UES-E3 | Contribution margin per unit | ≈ UES-E1 minus fees | Yellow | Until price locked |
-| UES-E4 | Gross margin % | Target ≥80% software | Yellow | TBD after pricing |
+| UES-E1 | Revenue per unit | B2B **$12**/seat-year list ($8 NGO floor; $18–20 enterprise); B2G first paid **$4,000**; city band $8k–12k (cap band $2k–15k) | Yellow | Renegotiate at first paid pilot; hierarchy = project primary |
+| UES-E2 | Variable cost per unit | ~$0 messaging; infra pennies; payment fees TBD; pack ops = founder time (often dominant) | Green | Doctrine forbids SMS/templates at our cost |
+| UES-E3 | Contribution margin per unit | ≈ UES-E1 minus fees and pack/training labor | Yellow | Price locked provisional; labor still manual |
+| UES-E4 | Gross margin % | Target ≥80% software (ex labor) | Yellow | After first paid invoice |
 | UES-E5 | Fully-loaded CAC | Target $0 paid; founder time + partner intros | Yellow | No paid ads until UES-E7 green |
 | UES-E6 | LTV (contribution-based) | TBD multi-year seats | Yellow | Need churn data |
 | UES-E7 | LTV:CAC ratio | TBD; do not scale paid until ≥2.5:1 | Yellow | UES-D1 gate |
@@ -96,12 +98,12 @@ Formulas verified against Stripe unit-economics guidance (checked 2026-07-15).
 |----|------|--------------|-------|
 | UES-F1 | Founder living | TBD / external | Not product burn |
 | UES-F2 | Domain | ~$1 amortized | |
-| UES-F3 | Hosting (pre-revenue) | $0 Hobby + Supabase free | Hobby non-commercial |
-| UES-F4 | Hosting (commercial) | ~$20 Vercel Pro or Cloudflare equiv | Required when monetizing |
+| UES-F3 | Hosting (pre-revenue) | $0 Hobby or CF free tier + Supabase free | Hobby non-commercial |
+| UES-F4 | Hosting (commercial) | Cloudflare Pages/Workers (target); Vercel Pro ~$20 alternate | Required when monetizing (G-3) |
 | | **Total fixed (product, pre-revenue)** | **≈ $0-5** | Domain only |
-| | **Total fixed (commercial)** | **≈ $20-40** | Pro + buffer |
+| | **Total fixed (commercial)** | **≈ $0-40** | Cloudflare-first; buffer if paid Workers/Pro |
 
-**Variable spend:** LLM coaching $0-15 if enabled (default off); messaging $0.
+**Variable spend:** LLM coaching $0 (post-MVP; flag off); messaging $0.
 
 | Metric | Value |
 |--------|-------|

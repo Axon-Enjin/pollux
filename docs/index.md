@@ -73,3 +73,5 @@
 ## 5. Notes
 
 Hybrid C product. Bootstrap burn doctrine in IDEA/UES. Research sources in repo root are inputs only, not specs.
+
+**Decision register (2026-07-15):** Telegram first (G-4); LLM post-MVP (G-5); commercial host Cloudflare (G-3); provisional pricing B2G $4k first paid / seats $12 list; audience includes under-18 (CLR consent still blocker for public launch). Still open/stale: named pilot (G-1), pack approval chain (G-6).

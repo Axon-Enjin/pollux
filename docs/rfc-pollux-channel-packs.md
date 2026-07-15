@@ -17,7 +17,7 @@
 Pollux must run the same inoculation loop and crisis-pack reads on the web PWA first, then optionally on chat bots, without forking business logic per channel. Crisis answers must never come from an LLM or the open web. Packs need a publish workflow so leaders can draft safely and learners only see approved versions.
 
 **Reference in PRD/SDD:**
-This RFC implements provisional PRD-F2, PRD-F3, and PRD-F5, and locks the channel and pack decisions deferred from Scrutiny G-4 and G-6.
+This RFC implements provisional PRD-F2, PRD-F3, and PRD-F5. Channel priority locks Scrutiny G-4 (Telegram first). Pack approval chain (G-6) stays open; this RFC covers publish confinement and version pin only.
 
 **Success criteria:**
 - Web PWA is the primary client. All lesson score and pack read logic lives in shared services, not in UI or bot code.
@@ -196,7 +196,7 @@ Web does not need a full adapter class. Server actions call core services direct
 | Option | Why Rejected |
 |--------|-------------|
 | Chat-first (Telegram primary, web later) | Pedagogy and offline lesson cache favor PWA. World Bank evidence was WhatsApp-native, but our bootstrap budget and zero-rated non-goal make web the honest v1. Telegram remains Should-Have. |
-| Messenger as first bot | Scrutiny left Telegram vs Messenger TBD. Telegram Bot API is simpler for a user-initiated webhook prototype without Page review friction. Messenger stays Could-Have. |
+| Messenger as first bot | Scrutiny G-4 **resolved Telegram first** (2026-07-15). Telegram Bot API is simpler for a user-initiated webhook prototype without Page review friction. Messenger stays Could-Have. |
 | Shared mutable pack row (edit in place after publish) | Shared links and learner screens would change underfoot. Harmful for crisis routes. Version pin is required. |
 | Open-web RAG for crisis Q&A | Hallucination risk on evacuation facts. Forbidden by IDEA doctrine and Scrutiny FC-5. |
 | Per-channel fork of scoring logic | Divergent badges and scores. Adapter + shared rule engine keeps one truth. |

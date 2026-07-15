@@ -46,11 +46,11 @@ Value is created by measurable inoculation lessons plus governed content packs. 
 | **Value Propositions** | Active inoculation with completion metrics; curated crisis packs; bootstrap-friendly ops |
 | **Channels** | Direct B2G outreach; NGO partners; optional UNESCO visibility |
 | **Customer Relationships** | Pilot success managers; pack approval with local owners |
-| **Revenue Streams** | Project fees (B2G); per-seat licenses (B2B); Phase 2 API (later) |
+| **Revenue Streams** | Project fees (B2G, primary ACV); per-seat licenses (B2B renewal/attach); Phase 2 API (later) |
 | **Key Resources** | Lesson content; pack governance; product codebase |
 | **Key Activities** | Ship lesson; localize packs; run pilots; measure discernment |
-| **Key Partners** | Pilot LGU TBD; NGOs; optional telco later (not v1) |
-| **Cost Structure** | Founder time; commercial hosting when monetizing; optional LLM; no paid messaging until funded |
+| **Key Partners** | Pilot LGU TBD (G-1 stale); NGOs; optional telco later (not v1) |
+| **Cost Structure** | Founder time; Cloudflare commercial host when monetizing; LLM post-MVP only; no paid messaging until funded |
 
 **UES handoff:** Segments → UES-D8; Revenue → UES-E1; Cost → UES-E2 / UES-F#.
 

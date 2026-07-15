@@ -21,13 +21,13 @@
 
 | Field | Value |
 |-------|-------|
-| AI component | Optional post-lesson LLM coaching (off by default). Primary product path is **rule-based** inoculation (no model on critical path). |
-| Realizing feature ID(s) | PRD-F1 (rule engine; non-AI). Optional coaching is PRD-F7 when flag on. |
+| AI component | Optional post-lesson LLM coaching (**post-MVP**; off by default). Primary product path is **rule-based** inoculation (no model on critical path). |
+| Realizing feature ID(s) | PRD-F1 (rule engine; non-AI). Optional coaching is PRD-F7 when flag on after MVP. |
 | System boundary | In: optional coach over lesson metadata after score. Out: pack authorship, auth, watch lists, crisis facts (curated packs only). **Open-web RAG for crisis is forbidden.** |
 | Autonomy level | Coaching text for user reading only; no tools; no pack publish; no admin actions |
 | Provisional risk classification (awareness) | Not framed as high-risk automated decisioning on rights; pedagogical aid. Confirm with counsel before school/LGU scale. |
 
-**Why an AIA here:** Even with a rule-based primary path, optional generative coaching plus crisis-adjacent product context needs a documented risk register before any model flag is enabled for real users.
+**Why an AIA here:** Even with a rule-based primary path, optional generative coaching plus crisis-adjacent product context needs a documented risk register before any model flag is enabled for real users. **MVP ships with coaching disabled** (Scrutiny G-5, 2026-07-15).
 
 **Self-check:**
 

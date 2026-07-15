@@ -61,12 +61,12 @@ No SAD yet. Main agent implements inline. If specialist agents are added later, 
 | Language | TypeScript | 5.x | 2026-07-15 | https://www.typescriptlang.org/docs/ |
 | Framework | Next.js App Router | 16.x | 2026-07-15 | https://nextjs.org/docs |
 | UI | React | 19.x | 2026-07-15 | https://react.dev |
-| Hosting | Vercel | Hobby (non-commercial prototype only); Pro or Cloudflare for commercial | 2026-07-15 | https://vercel.com/docs/plans/hobby |
+| Hosting | Cloudflare Pages/Workers (commercial); Vercel Hobby optional for non-commercial proto | Cloudflare locked G-3 | 2026-07-15 | https://developers.cloudflare.com/pages/ |
 | DB / Auth | Supabase Postgres + Auth | current JS client + `@supabase/ssr` | 2026-07-15 | https://supabase.com/docs |
 | ORM | Drizzle | current | 2026-07-15 | https://orm.drizzle.team |
 | Validation | Zod | current | 2026-07-15 | https://zod.dev |
 | Bot (optional) | Telegram Bot API | webhook + secret token | 2026-07-15 | https://core.telegram.org/bots/api |
-| LLM coach (optional) | Provider TBD; flag off | pin exact model id before enable | 2026-07-15 | provider docs at enable time |
+| LLM coach (optional, post-MVP) | Provider TBD; flag off | pin exact model id before enable | 2026-07-15 | provider docs at enable time |
 
 *Re-verify before coding. A sample two majors stale is worse than none.*
 
@@ -78,7 +78,7 @@ No SAD yet. Main agent implements inline. If specialist agents are added later, 
 | Supabase `auth-helpers` | `@supabase/ssr` for cookie session on server | 2024+ | https://supabase.com/docs |
 | Client-passed `user_id` / `role` | Derive identity from session; enforce RLS + server role check | always | SDD §5 |
 | Open-web RAG or LLM for crisis facts | Published pack items only | product lock | RFC pack confinement |
-| Vercel Hobby for commercial pilots | Vercel Pro or Cloudflare before paid use | Scrutiny FC-6 | https://vercel.com/docs/plans/hobby |
+| Vercel Hobby for commercial pilots | Cloudflare Pages/Workers before paid use (Vercel Pro alternate) | Scrutiny FC-6 / G-3 | https://developers.cloudflare.com/pages/ |
 | Pages Router defaults / `getServerSideProps` patterns | App Router server components, route handlers, server actions | App Router | https://nextjs.org/docs/app |
 
 **Fast-moving deps that require live verification before coding:** Next.js (proxy vs middleware, cache APIs), React 19, `@supabase/ssr`, Drizzle kit migrate commands, Telegram Bot API webhook fields.

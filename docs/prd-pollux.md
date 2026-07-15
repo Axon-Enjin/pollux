@@ -137,23 +137,26 @@ Rule-based lesson engine is primary (not generative). Optional LLM coaching (PRD
 
 - Supabase Auth + Postgres available
 - Commercial hosting upgraded before monetized public launch (UES-F4)
-- First pilot org TBD (GTM)
+- First pilot org still open / stale (GTM G-1)
+- PRD-F7 LLM coaching deferred past MVP; flag remains off
+- Learner audience includes under-18; CLR age gate + parental consent still required before public school/LGU launch
 
 ---
 
 ## 9. Rollback
 
-**Single-source rollback:** Revert Vercel/Cloudflare deployment to previous production deployment; database migrations must be backward-compatible or have a documented down migration. Feature flags disable PRD-F7 LLM and PRD-F5 bot without redeploy when possible.
+**Single-source rollback:** Revert Cloudflare (commercial) or prior prototype host deployment to the previous production deployment; database migrations must be backward-compatible or have a documented down migration. Feature flags disable PRD-F7 LLM and PRD-F5 bot without redeploy when possible.
 
 ---
 
 ## 10. Open Questions
 
-| Question | Owner | Resolve by |
-|----------|-------|------------|
-| Telegram vs Messenger first | Eng | SDD lock |
-| Age gate for under-18 | CLR | Public launch |
-| Exact B2B seat price | Biz | First paid pilot |
+| Question | Owner | Status | Resolve by |
+|----------|-------|--------|------------|
+| Telegram vs Messenger first | Eng | **Resolved: Telegram** (PRD-F5 when shipped; not MVP-blocking) | Done (2026-07-15) |
+| Age audience + gate for under-18 | CLR | Audience includes minors; consent/PIA policy still **Blocker for public launch** | Public launch |
+| Exact B2B / B2G price | Biz | **Resolved provisional:** seats $12/yr list; first paid B2G project $4,000 (see GTM/UES) | Renegotiate at first paid pilot |
+| Pack authoring approval chain | Product | Stale (open); ship leader publish + version pin | Before SDD lock on G-6 |
 
 ---
 

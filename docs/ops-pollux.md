@@ -8,7 +8,7 @@
 **Last reconciled:** N/A (not yet reconciled with prod)
 **SDD:** [sdd-pollux.md](sdd-pollux.md)
 
-> Bootstrap stack: Next.js on Vercel Hobby (non-commercial prototypes only) or Cloudflare Pages; Supabase free; Telegram optional. Commercial pilots upgrade host (see section 5). Rollback: prefer [prd-pollux.md](prd-pollux.md) section 9 when present; else this runbook.
+> Bootstrap stack: Next.js on Vercel Hobby (non-commercial prototypes only) or Cloudflare Pages; Supabase free; Telegram after MVP. Commercial pilots use **Cloudflare** (see section 5). Rollback: prefer [prd-pollux.md](prd-pollux.md) section 9 when present; else this runbook.
 
 ---
 
@@ -98,7 +98,7 @@ Supabase free projects can **pause after inactivity**. Before demos and weekly d
 | Phase | Host | Notes |
 |-------|------|-------|
 | Pre-revenue / non-commercial prototype | Vercel Hobby **or** Cloudflare Pages + Supabase free | Hobby forbids commercial use ([Vercel Hobby](https://vercel.com/docs/plans/hobby)) |
-| Commercial pilot / paid B2G | Vercel Pro (~$20) **or** stay on Cloudflare Pages | Pick before first paid invoice; update UES burn |
+| Commercial pilot / paid B2G | **Cloudflare Pages + Workers** (locked G-3) | Vercel Pro (~$20) alternate; update UES burn |
 | Scale later | Pro + paid Supabase as needed | Still no paid messaging until funded |
 
 Scrutiny FC-6/FC-7: do not claim "$0 commercial production" on Hobby.
