@@ -1,0 +1,9 @@
+ts	phase	decision	why	evidence	result
+2026-07-15T13:00:00Z	frame	exit predicate: check.py --scale full green plus Full suite including UES and AIA	autonomous-run needs a checkable stop	c:\Users\delat\.cursor\plans\pollux_full_fmd_861b606d.plan.md	open
+2026-07-15T13:01:00Z	scaffold	pointer init FMD v1.19.0 into pollux; created docs and .audit	all-in normal mode with thin engine footprint	D:\PROJECTS\pollux\AGENTS.md	pointer files present
+2026-07-15T13:04:51Z	idea	wrote IDEA Hybrid C with bootstrap channel doctrine	subtract-before-add cut zero-rate SMS; experience-first low-bandwidth PWA	docs/idea-pollux.md	Draft
+2026-07-15T13:04:51Z	gaten	Scrutiny PROCEED WITH FIXES	World Bank claim verified; Vercel Hobby commercial contradiction carried to UES	docs/scrutiny-pollux.md	PROCEED WITH FIXES
+2026-07-15T13:05:24Z	fanout	spawned 4 poteto agents for Full suite fill	guard-context-window; build-the-lever via fmd-fill-contract.md	.audit/fmd-fill-contract.md	in flight
+2026-07-15T13:07:51Z	recovery	parent wrote VAL BRD UES GTM PRD DSD after 2 agents hit API limit	never-block; sequence units	docs/val-pollux.md etc	recovered
+2026-07-15T13:09:29Z	validate	check.py --scale full green after dash fixes	prove-it-works via FMD lever	check.py exit 0	tests green
+2026-07-15T13:10:42Z	frame	exit predicate met: check.py --scale full green + Full suite on disk	autonomous-run stop	check.py 0/0; docs suite complete	tests green
