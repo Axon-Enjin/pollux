@@ -11,7 +11,7 @@
 **VOICE:** [voice-pollux.md](voice-pollux.md)
 **Call:** [UNESCO Youth Hackathon 2026](https://www.unesco.org/en/articles/unesco-youth-hackathon-2026)
 
-Method note for the written proposal and the 3-minute video. Status is Input. Writers follow this recipe; they do not treat this file as a Locked spec. Team roster is locked in [research-pollux-unesco-proposal-2026.md](research-pollux-unesco-proposal-2026.md). Do not invent extra names.
+Method note for the written proposal and the 3-minute video. Status is Input. Writers follow this recipe; they do not treat this file as a Locked spec. Canonical proposal and team roster: [pitch/unesco-proposal.md](pitch/unesco-proposal.md). Do not invent extra names.
 
 Product lock for every heading: v1 is the open campaign kit (PRD-F15). Mia runs the session. Pollux packs the bag. Seekers Guild partners. Guild never speaks for her Page.
 

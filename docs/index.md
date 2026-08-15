@@ -33,7 +33,7 @@
 | AIA · AI Assurance Dossier | [aia-pollux.md](aia-pollux.md) | 0.2 | Draft | 2026-08-16 | N/A (F15 human-authored kits; leftover F7/F12 text) |
 | OPS · Ops & Observability | [ops-pollux.md](ops-pollux.md) | 0.1 | Draft | 2026-07-15 | N/A |
 | RESEARCH · Agent-era MIL | [research-pollux-agent-era-mil.md](research-pollux-agent-era-mil.md) | 0.2 | Input | 2026-08-16 | N/A |
-| RESEARCH · UNESCO proposal 2026 | [research-pollux-unesco-proposal-2026.md](research-pollux-unesco-proposal-2026.md) | 0.3 | Input | 2026-08-16 | N/A |
+| RESEARCH · UNESCO proposal 2026 | [research-pollux-unesco-proposal-2026.md](research-pollux-unesco-proposal-2026.md) | 0.4 | Input | 2026-08-16 | N/A (pointer to pitch/unesco-proposal.md) |
 | RESEARCH · UNESCO proposal craft | [research-pollux-proposal-craft.md](research-pollux-proposal-craft.md) | 0.1 | Input | 2026-08-16 | N/A |
 | INPUT · Mentorship 1 July | [mentorship-july-1.md](mentorship-july-1.md) | 0.1 | Input | 2026-07-01 | N/A |
 | INPUT · Mentorship 2 July | [mentorship-july-2.md](mentorship-july-2.md) | 0.1 | Input | 2026-07-02 | N/A |
@@ -64,11 +64,8 @@ UNESCO pitch artifacts (support [pitch-pollux.md](pitch-pollux.md); portal uploa
 
 | Note | File |
 |------|------|
-| Portal field map | unesco-submit.md |
-| Rehearsal card | unesco-rehearsal.md |
-| Proposal HTML/PDF | unesco-proposal.html / unesco-proposal.pdf |
-| Teleprompter | unesco-teleprompter.html |
-| Captions | unesco-3min.srt |
+| Proposal (English MD) | [pitch/unesco-proposal.md](pitch/unesco-proposal.md) |
+| Video script (2:30) | [pitch/unesco-script.md](pitch/unesco-script.md) |
 
 **Materialized at project root (not in `docs/`):** `README.md`, `BRAND.md`, `DESIGN.md`, `AGENTS.md` (from BUILD), `LICENSE`, `CONTRIBUTING.md`. Optional: `MODEL_CARD.md` (from AIA §1).
 

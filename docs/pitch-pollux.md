@@ -8,7 +8,7 @@
 **Last reconciled:** N/A (not yet reconciled with demo)
 **IDEA:** [idea-pollux.md](idea-pollux.md)
 **PRD:** [prd-pollux.md](prd-pollux.md)
-**Proposal input:** [research-pollux-unesco-proposal-2026.md](research-pollux-unesco-proposal-2026.md)
+**Proposal:** [pitch/unesco-proposal.md](pitch/unesco-proposal.md)
 
 ---
 
@@ -60,7 +60,7 @@ UNESCO video asks: tell the story (scenes 1-2), explain the solution (scenes 3-4
 
 **Do not demo:** F3 tap, clone-fill-publish, inoculation game, scored lesson UI, settings, login errors, LLM coach, Meltwater-style dashboards, Guild membership wall, kit text as SK-official crisis canon.
 
-Word-for-word UNESCO cut: §8. Table props: [print/README.md](outreach-kit/print/README.md) (packet pages; F3 card is not this cut). Subtitles: [pitch/unesco-3min.srt](pitch/unesco-3min.srt).
+Word-for-word UNESCO cut: [pitch/unesco-script.md](pitch/unesco-script.md). Table props: [print/README.md](outreach-kit/print/README.md) (packet pages; F3 card is not this cut).
 
 ---
 
@@ -71,7 +71,7 @@ Word-for-word UNESCO cut: §8. Table props: [print/README.md](outreach-kit/print
 | Official criterion | Where we address it | Evidence |
 |--------------------|---------------------|----------|
 | Consistency with the Theme | Hook + MIL hour + kit demo | Strong alignment with Play Your Part and MIL principles: an SK officer runs Saturday outreach herself; think, check, and share fairly are the hour she teaches from the kit |
-| Clarity of Presentation | Kit objects + one-take §8 + jury sentence | One kit on the table, one partner community, one close. Print packet and run-of-show on camera. Spoken cut is 279 words. |
+| Clarity of Presentation | Kit objects + one-take [unesco-script.md](pitch/unesco-script.md) + jury sentence | One kit on the table, one partner community, one close. Print packet and run-of-show on camera. Spoken cut is 268 words. |
 | Innovation & Creativity | Run-of-show plus student return URL | A session they can run this week. After-link so MIL continues after dismissal. 3Ds: document, demonstrate, duplicate. |
 | Feasibility & Sustainability | Print packet + run-of-show + reuse | Paper path this Saturday. Apache-2.0 / CC-BY when they exist. Officers reuse the same kit next week. No paid vendor in the room. |
 | Impact & Inclusion | Provinces + free materials + cheap phone | Same kit outside Manila. Materials stay free. Demo uses Mia 19. CLR still blocks public under-18 camp. |
@@ -117,69 +117,16 @@ Contest video uses the print packet and run-of-show. Do not claim production-rea
 
 Deadline: **16 Aug 2026 23:59 Paris** (about 17 Aug 05:59 Philippine time).
 
-1. Team roster of six is filled in [research-pollux-unesco-proposal-2026.md](research-pollux-unesco-proposal-2026.md) § Team (every row is Team member). Re-export PDF if that table moved.
-2. Proposal HTML/PDF: [pitch/unesco-proposal.html](pitch/unesco-proposal.html) and [pitch/unesco-proposal.pdf](pitch/unesco-proposal.pdf) (regenerate if you edit the input).
-3. Record §8 in one take, max 3:00. Burn [pitch/unesco-3min.srt](pitch/unesco-3min.srt). English or local with English subs.
-4. Upload proposal + video on the [UNESCO Youth Hackathon 2026](https://www.unesco.org/en/articles/unesco-youth-hackathon-2026) portal. This repo cannot log in for you.
-5. If the team cannot tell the Saturday kit story in three minutes, skip the portal and keep packing the kit.
+1. Team roster of six is filled in [pitch/unesco-proposal.md](pitch/unesco-proposal.md) (every row is Team member). Export that file to PDF or Word if the portal asks for a document.
+2. Record [pitch/unesco-script.md](pitch/unesco-script.md) in one take, max 3:00. English or local with English subs.
+3. Upload proposal + video on the [UNESCO Youth Hackathon 2026](https://www.unesco.org/en/articles/unesco-youth-hackathon-2026) portal. This repo cannot log in for you.
+4. If the team cannot tell the Saturday kit story in three minutes, skip the portal and keep packing the kit.
 
 ---
 
-## 8. UNESCO spoken script and shot list (150s)
+## 8. UNESCO spoken script
 
-Target **2:30**. Hard cap **3:00**. About 130 words per minute. Do not add slides. Speak this text.
-
-UNESCO video asks in this cut: story (Hook + Problem), solution (Solution + Proof), originality and impact (Close, with Guild partner and free materials named in Proof).
-
-**Pre-flight:** quiet room; print packet + run-of-show on the table; student URL ready on the phone if you show it; no Guild logo as SK Page; no lesson/game UI; no F3 tap; Mia 19; synthetic session only.
-
-Spoken word count: **279 words**. At 130 wpm that is about 129 seconds of speech. Leave the remaining time in Proof for hands on the packet.
-
-### Shot list
-
-| Time | Camera | On screen / in hand | On-screen words (few) |
-|------|--------|---------------------|------------------------|
-| 0:00-0:15 | Face | Empty Saturday: phone, no packet yet | Saturday |
-| 0:15-0:35 | Face | Still of the blank table, dim | (none) |
-| 0:35-0:55 | Face | Hands set packet and run-of-show | They run the session. |
-| 0:55-2:05 | Hands | Open packet; clock pause-before-share; show student URL | Open kit / Pause / Student URL |
-| 2:05-2:30 | Face | Packet + run-of-show still; no Guild crest | (none; jury sentence is spoken) |
-
-Cuts only on these five beats if you cannot do one take.
-
-### Spoken text
-
-**Story: the problem (0:00-0:15)**
-
-SK wants a barangay outreach this Saturday. Mia is nineteen, SK information officer. She has a phone and a Page. No agenda. No handouts. Nowhere for students to go after.
-
-**Story: why it matters (0:15-0:35)**
-
-Media and information literacy happens in the hour she has to run this Saturday, not in a quiz she finished in June. Fluent AI makes rumors look official. SK already has the mandate. They have no agenda, no handouts, and no vendor in the room.
-
-**Solution: what and who (0:35-0:55)**
-
-Pollux is the open campaign kit an SK officer runs herself: modules, a program guide, and a site students return to after. Pre-made modules they can teach. A run-of-show and a logistics list they can tailor. They run the session. We pack the bag.
-
-**Solution: how (0:55-2:05)**
-
-Watch the kit. This print packet is what we demo. This page is the run-of-show. Mia opens both herself. She does not wait for a vendor. Six modules. Forty-five minutes on a covered court, or a half day if they have the hall.
-
-Document. Demonstrate. Duplicate. She writes the checklist. She shows pause before share once. Then the room copies from the handout. A fluent rumor hits. Hands stay down until they check the source. If it is not in the pack, it is not official. Practice, not crisis canon.
-
-Students leave with a URL. They can open the site after the session. Seekers Guild partners with SK and LGU on the same materials, including outside Manila. Nothing valuable is paywalled.
-
-**Originality and impact (2:05-2:30)**
-
-Pollux is the open campaign kit SK councils run themselves. Seekers Guild partners with youth desks, especially outside the big cities. Modules, program guide, and student access stay free. Showcase both. Then let SK officers run Saturday without us.
-
-### Claim audit (say only this)
-
-Allowed: docs and kit notes exist; v1 is the campaign kit; print packet and run-of-show are the demo; kit is facilitator notes, not crisis canon; demo persona is 18+; CLR still blocks public under-18 camp; Apache-2.0 / CC-BY templates when they exist; materials stay free.
-
-Forbidden: production-ready; we fact-check the internet; kit completion launches an official pack; Guild publishes SK facts; we race rumor volume with a model; F3 tap as the product.
-
-Rehearsal checklist: [pitch/unesco-rehearsal.md](pitch/unesco-rehearsal.md). Teleprompter: [pitch/unesco-teleprompter.html](pitch/unesco-teleprompter.html).
+Canonical spoken cut: [pitch/unesco-script.md](pitch/unesco-script.md). Target 2:30. Hard cap 3:00. Do not keep a second full draft here.
 
 ---
 
