@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pollux desk · CONCEPT</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #1C1A17;
+      color: #1C1A17;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .phone {
+      width: 390px;
+      max-width: 100%;
+      background: #F7F3EA;
+      min-height: 100vh;
+      padding: 16px 16px 32px;
+      position: relative;
+    }
+    .stamp {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: #9B2C2C;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      padding: 8px;
+      margin: -16px -16px 16px;
+    }
+    h1 { font-family: Georgia, serif; font-size: 22px; margin: 0 0 4px; }
+    .meta { font-size: 13px; color: #5c564c; margin-bottom: 16px; }
+    .row {
+      border: 1px solid #DDD4C4;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 8px;
+      background: #fff;
+    }
+    .row strong { display: block; font-size: 15px; }
+    .status { font-size: 12px; color: #0F6B5C; }
+    .btn {
+      display: block;
+      width: 100%;
+      margin-top: 16px;
+      background: #0F6B5C;
+      color: #F7F3EA;
+      border: 0;
+      border-radius: 8px;
+      min-height: 44px;
+      font-size: 16px;
+    }
+    .verbs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .verbs span {
+      border: 1px solid #0F6B5C;
+      color: #0F6B5C;
+      border-radius: 8px;
+      padding: 4px 8px;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="stamp">CONCEPT · not a live app</div>
+    <h1>San Roque SK</h1>
+    <p class="meta">Barangay org · not Seekers Guild · Mia, 19</p>
+    <div class="row">
+      <strong>Flood official pack</strong>
+      <span class="status">Published · v1 · 2026-08-16</span>
+    </div>
+    <div class="row">
+      <strong>Pickup point</strong>
+      <span class="status">Fill local field (demo blank until officer types)</span>
+    </div>
+    <div class="row">
+      <strong>Hotline</strong>
+      <span class="status">Fill local field</span>
+    </div>
+    <div class="row">
+      <strong>Who approved</strong>
+      <span class="status">Fill local field</span>
+    </div>
+    <div class="verbs">
+      <span>Clone</span><span>Fill</span><span>Publish</span><span>Commit</span><span>Refuse</span>
+    </div>
+    <button class="btn" type="button">Commit share (human)</button>
+  </div>
+</body>
+</html>

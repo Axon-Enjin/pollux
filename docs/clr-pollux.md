@@ -1,8 +1,8 @@
 # Compliance & Legal Readiness Register (CLR)
 
 **Project:** Pollux
-**Date:** 2026-07-15
-**Version:** 0.1
+**Date:** 2026-08-16
+**Version:** 0.2
 **Owner:** Pollux founding team
 **Status:** Draft
 **Last reconciled:** N/A (not yet reconciled with code)
@@ -40,6 +40,7 @@
 | Optional LLM coaching | Explain techniques after score | prompt context from lesson metadata; no pack invent | learners who opt in | Model provider TBD | provider region | provider retention per DPA; minimize | consent; off by default |
 | Product analytics | Funnel / completion metrics | pseudonymous events | users | TBD (PostHog or Vercel Analytics) | per vendor | 12 months | consent / legitimate interest TBD |
 | Crash logs | Reliability | stack traces, hashed user id | users | Vercel / Sentry TBD | per vendor | 30-90 days | legitimate interest |
+| Outreach / seminar kit (PRD-F15) | Facilitation at camps and org sessions; print packets | kit session metadata: org, pack version, format, started_by officer. No student names in v1 session table. Print packets carry no PII; consent checklist is a stub pointing to counsel, not a legal form | officers / leaders who start sessions; under-18 may attend real camps (product demo remains Mia 19) | Supabase DB; print is offline | same as project region | until org deletion or session retention TBD | contract / school-camp lawful basis TBD counsel |
 
 **Sensitivity flags:**
 
@@ -47,7 +48,7 @@
 |-----------|-----------|-------|
 | Basic PII (name, email) | Yes | email at auth; display name optional |
 | Special-category / sensitive | Possible | crisis packs may be health-adjacent (flood, disease); content is curated facts, not clinical records. Flag for counsel. |
-| Children's data (under 16 EU / under 13 COPPA) | Yes (audience decided) | Product serves **all ages including under-18**. Age gate + parental consent + school rules still **TBD with counsel**. Blocker for public school/LGU launch. |
+| Children's data (under 16 EU / under 13 COPPA) | Yes (audience decided) | Product serves **all ages including under-18**, including kit/outreach camps (PRD-F15). Age gate + parental consent + school rules still **TBD with counsel**. **BLOCKER** for public school/LGU camp launch (same under-18 blocker, now covering F15). Minimize participant PII; do not collect student names in v1 session table. Fixtures are synthetic only; no real minor accounts. |
 | Precise location | No | Not collected in v1 |
 | Photos / camera / microphone | No | |
 | Device IDs / advertising IDs | No | No ad network in v1 |
@@ -63,7 +64,7 @@
 |------|-------|---------------|-----------------|
 | Every processing activity has a retention period | Partial | this table; several TBD | Yes |
 | Every sub-processor is named and has a DPA in place | Partial | Supabase; Telegram; model provider TBD | Yes |
-| Inventory is dated and treated as a living document | Yes | header date 2026-07-15 | No |
+| Inventory is dated and treated as a living document | Yes | header date 2026-08-16 | No |
 
 ---
 
@@ -95,7 +96,7 @@
 
 | Flag | Present? | Why it escalates |
 |------|----------|------------------|
-| Children's data | **Yes (audience locked; policy TBD)** | Under-18 learners are in scope. Age gate, parental consent, and school deployment rules need counsel before public launch. |
+| Children's data | **Yes (audience locked; policy TBD)** | Under-18 learners are in scope, including real camps and outreach kit sessions (PRD-F15). Age gate, parental consent, and school rules need counsel before public school/LGU camp launch. Demo persona remains Mia 19; fixtures stay synthetic (no real youth PII). |
 | Health / medical data | Possible | Crisis packs may include health-adjacent guidance; not a clinical product, but counsel on framing |
 | Payments / card data | No | |
 | Biometric data | No | |
@@ -107,7 +108,7 @@
 **DPIA required?** Likely **Yes** before school/LGU-scale processing of youth data. Out of scope for this register; counsel + applicable DPIA process.
 
 **Critical escalations (do not soft-launch these surfaces without counsel):**
-1. Minors / youth age gate and parental consent (school or under-18 marketing).
+1. Minors / youth age gate and parental consent (school, LGU public camp, or under-18 marketing). Counsel required before school/LGU camp (PRD-F15).
 2. LGU or school-branded pack as "official" crisis truth (governance + liability).
 3. PH DPO / NPC registration posture for a live public service.
 4. Any paid messaging channel (WhatsApp/SMS) if later funded.

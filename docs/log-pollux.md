@@ -25,6 +25,12 @@
 | 10 | 2026-07-15T15:38:00Z | Decision register write-back | n/a | IDEA PRD SCRUTINY GTM UES VAL CLR AIA BRD SDD OPS RFC BUILD README index | G-3/4/5 + pricing locked; G-1/G-6 stale | 0 fail 0 warn |
 | 11 | 2026-08-13T15:50:00Z | Agent-era MIL reframe (principal-training) | research memo + Draft patches | research-pollux-agent-era-mil.md; IDEA PRD RFC SCRUTINY VAL GTM index; mentorship-july-1/2.md | PROCEED WITH FIXES; AE claims Unverified | 0 fail 3 warn |
 | 12 | 2026-08-15T14:30:00Z | SK/LGU self-launch aide + Guild community + UNESCO packet | IDEA/PRD/GTM/VAL/SCRUTINY/RFC/PITCH | idea,prd,gtm,val,scrutiny,rfc,pitch,sdd,qad,index,README,LICENSE,CONTRIBUTING; research-pollux-unesco-proposal-2026.md | spine locked in Draft 0.3; portal submit is founder action | 0 fail 2 warn |
+| 13 | 2026-08-15T16:35:00Z | PRD-F15 outreach kit product lock (Wave 1) | batch plan | idea 0.4, prd 0.4, sdd 0.2, rfc-001 dual allowlist, clr 0.2, aia 0.2, index, README | F15 Should-Have; pack_kind split; kit not crisis canon | 0 fail 1 warn |
+| 14 | 2026-08-15T16:42:00Z | PRD-F15 kit source vault (Wave 2) | batch plan | docs/outreach-kit spine, 6 modules, 3Ds, print packet, 00-INDEX | AACRA x UNESCO; paper + in-app later | n/a |
+| 16 | 2026-08-16T17:20:00Z | UNESCO 3-min pitch shoot kit | PITCH + print HTML/PDF | pitch 0.3 spoken script, F3 demo card, packet PDFs, proposal PDF, SRT | portal submit remains founder | not run |
+| 17 | 2026-08-16T18:20:00Z | Human voice rewrite (batch U1–U9) | VOICE card + canonical lines | voice-pollux.md; IDEA/PRD/GTM/PITCH/research/README/CONTRIBUTING/DSD/brand.html | desk/tap/jury aligned; PDF regen | not run |
+| 18 | 2026-08-16T18:45:00Z | Campaign OS pivot (batch U1–U12) | IDEA/PRD/GTM/VOICE/PITCH | kit-first product; UNESCO campaign story; UES 0.2 ladder; BUILD/RFC flagged stale | PROCEED WITH FIXES; under-18 still BLOCKER | not run |
+| 19 | 2026-08-16T20:10:00Z | UNESCO proposal write-ups (batch U1-U5) | proposal craft + official headings | craft Input; proposal 0.3 + HTML; PITCH 0.5; agent-era §7 kit lock; print README camera set | team filled; PDF regen; portal still founder | 0 fail 1 warn |
 
 ---
 

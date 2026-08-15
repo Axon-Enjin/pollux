@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>F3 paper card (demo fixture)</title>
+  <style>
+    @page { size: A4; margin: 14mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #F7F3EA;
+      color: #1C1A17;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    }
+    .card {
+      border: 2px solid #1C1A17;
+      min-height: 260mm;
+      padding: 18mm 16mm;
+      position: relative;
+    }
+    .stamp {
+      position: absolute;
+      top: 10mm;
+      right: 10mm;
+      border: 2px solid #9B2C2C;
+      color: #9B2C2C;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 6px 10px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 0 8px;
+      max-width: 70%;
+    }
+    .sub { font-size: 13px; margin: 0 0 24px; }
+    dl { margin: 0; }
+    dt { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #5c564c; margin-top: 14px; }
+    dd { margin: 4px 0 0; font-size: 18px; }
+    .qr {
+      margin-top: 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .qr-box {
+      width: 120px;
+      height: 120px;
+      border: 2px solid #1C1A17;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 11px;
+      padding: 8px;
+    }
+    .url { font-size: 13px; word-break: break-all; }
+    .rules { margin-top: 28px; font-size: 13px; line-height: 1.45; border-top: 1px solid #DDD4C4; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <div class="stamp">Demo fixture<br />not a live SK</div>
+    <h1>Official information pack</h1>
+    <p class="sub">Sangguniang Kabataan / LGU youth desk · PRD-F3 paper card</p>
+    <dl>
+      <dt>Publisher</dt>
+      <dd>SK Information Officer Mia (demo, 19) · Barangay San Roque (synthetic)</dd>
+      <dt>Pack title</dt>
+      <dd>Flood official pack · demo</dd>
+      <dt>Version</dt>
+      <dd>1</dd>
+      <dt>Published</dt>
+      <dd>2026-08-16</dd>
+    </dl>
+    <div class="qr">
+      <div class="qr-box">QR<br />demo URL<br />not live</div>
+      <div>
+        <div class="url">https://pollux.example/packs/demo-mia-flood-v1</div>
+        <p class="sub" style="margin-top:12px">This card is the official-pack identity for the demo org. It is not the seminar kit.</p>
+      </div>
+    </div>
+    <div class="rules">
+      <p>This card is the official pack for this SK demo. This is not the seminar kit. Seekers Guild is not on this Page.</p>
+      <p>Synthetic fixture for UNESCO video and rehearsal. Do not invent real routes, sites, or hotlines. Do not post this as government voice for a real barangay.</p>
+    </div>
+  </article>
+</body>
+</html>

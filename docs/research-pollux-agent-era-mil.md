@@ -1,8 +1,8 @@
 # Research Memo: Agent-Era MIL (Pollux)
 
 **Project:** Pollux
-**Date:** 2026-08-13
-**Version:** 0.1
+**Date:** 2026-08-16
+**Version:** 0.2
 **Owner:** Pollux founding team
 **Status:** Input (not a Locked spec)
 **Consumers:** IDEA, PRD, RFC-001, SCRUTINY, VAL, GTM
@@ -140,20 +140,20 @@ Cold start remains the rule-based inoculation lesson + published packs. The *job
 
 ## 7. UNESCO one-pager (Dun structure)
 
-**One sentence:** Pollux keeps youth as the principal in an agent-shaped information world: a short game that teaches manipulation techniques, a local pack that is the only allowed crisis source, and an act in your own chat so initiative is practiced, not described.
+**One sentence:** Pollux is the open campaign kit an SK officer runs herself: modules, a program guide, and a site students return to after.
 
 | Must-have | Content |
 |-----------|---------|
-| Idea | Principal-training MIL loop (game + canon pack + Act) |
-| Problem | Rumors stick; AI volume exhausts checkers; agents will mediate the feed |
-| Why it matters | Shared truth and local crisis safety for barangays and youth leaders |
-| Who it helps | Mia / SK / LGU youth and DRRM officers; NGO MIL programs |
-| How it works | Rule-based Spot the Trick; published-only packs; Act drill; no open-web oracle |
-| What you need | Pilot org, pack approval owners, UNESCO showcase slot, bootstrap hosting |
-| Sharp fact (10s) | World Bank Find the Fake: interactive inoculation beat passive infographics (n=2851) |
-| Refuse to claim | Racing the firehose; AI companions; open-web crisis oracles; school AI policy suite |
+| Idea | Pollux is the open campaign kit SK councils run themselves. The bag is teachable modules, a run-of-show, and a student URL. Seekers Guild partners with SK and LGU on the same materials. |
+| Problem | Saturday outreach is on the calendar with no agenda, no handouts, and no after-link. Media and information literacy for that hour is the session she still has to run. |
+| Why | SK already has the mandate. A paid vendor workshop and a blank Facebook event fail this week. Youth outside Manila rarely get the same kit. |
+| Who | Mia and SK or LGU youth desks run the hour. Students keep the URL after. Seekers Guild partners in the provinces. |
+| How | Officers teach six modules in a 45-minute or half-day run. Print covers a dead 3G hour. Students leave with a URL. Guild is an optional partner. |
+| Needs | A named pilot SK is still TBD (G-1). A hosted student URL with paper fallback is enough to demo. The venue need is a UNESCO showcase slot. |
+| Sharp fact | World Bank Find the Fake (n=2851): interactive inoculation beat passive infographics. That finding is pedagogy evidence for a Could-Have drill. The UNESCO submission is the campaign kit. |
+| Refuse | We refuse racing the firehose, AI companions, and open-web crisis oracles. We refuse submitting Pollux as a game. Guild does not sit on the SK Page. Modules, the program guide, and student access stay free. |
 
-**Venue stance:** UNESCO Global Youth Hackathon is the first showcase venue for this reframe. It is still not the revenue plan (B2G/B2B licensing remains).
+**Venue stance:** UNESCO Global Youth Hackathon 2026 is the first showcase venue. B2G and B2B licensing remain the revenue plan. The hackathon is not why the product exists.
 
 ---
 

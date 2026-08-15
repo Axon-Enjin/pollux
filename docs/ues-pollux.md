@@ -1,8 +1,8 @@
 # Unit Economics Sheet (UES)
 
 **Project:** Pollux
-**Date:** 2026-07-15
-**Version:** 0.1
+**Date:** 2026-08-16
+**Version:** 0.2
 **Owner:** Pollux founding team
 **Status:** Draft
 **Last reconciled:** N/A
@@ -13,11 +13,16 @@
 
 ## 0. Business Model Fit
 
-**The unit:** One B2B learner seat-year, or one B2G municipal deployment project
+**The unit (2026-08-16):** A free DIY campaign session (kit started / packet printed / student return). Paid ACV is a later B2G DFY install of that same open kit, not a paywall on modules.
 
-**Unit hierarchy (2026-07-15):** B2G project is the primary ACV for first paid pilots. B2B seats are renewal/attach (list $12/seat-year, min 50). Do not treat seats as standalone default-alive math at miniature pilot scale.
+**Unit hierarchy:**
+- DIY campaign kit: $0. UNESCO Must-Have. No paywall on modules, run-of-show, print, or student access.
+- DWY in-app runner: $0 when flagged on. Later.
+- Guild partnership: $0. Facilitators, not the SK Page.
+- Official pack desk: later / side. Not this edition's north star.
+- DFY B2G hosted campaign kit: first paid ACV (keep UES-E1 $4,000 band until a named buyer). Open materials stay free.
 
-**Who pays:** LGU / NGO / enterprise buyer (not the learner via D2C)
+**Who pays:** Nobody for the open kit. LGU / NGO for optional hosted DFY later. Not the student.
 
 **Margin thesis:** Growth funded by contribution from seats and projects. No paid messaging or enterprise listening until a buyer funds it.
 

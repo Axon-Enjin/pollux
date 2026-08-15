@@ -1,29 +1,48 @@
 # Validation Brief (VALIDATION)
 
 **Project:** Pollux
-**Date:** 2026-08-15
-**Version:** 0.3
+**Date:** 2026-08-16
+**Version:** 0.5
 **Owner:** Pollux founding team
 **Status:** Draft
 **Last reconciled:** N/A
 **IDEA:** [idea-pollux.md](idea-pollux.md)
+**VOICE (UVP / one-liner):** [voice-pollux.md](voice-pollux.md)
 **Research input:** [research-pollux-agent-era-mil.md](research-pollux-agent-era-mil.md)
+**Campaign kit:** [outreach-kit/README.md](outreach-kit/README.md)
+
+---
+
+## 0. Job this week (campaign OS)
+
+**Job:** An SK officer must run barangay outreach or a bootcamp without a vendor and without inventing a curriculum tonight.
+
+**UVP (paste; do not reinvent):** For SK and LGU youth officers who need an outreach or bootcamp this week and do not know where to start, Pollux is the open campaign kit: teachable modules, a run-of-show, logistics, and a site students can keep using. Unlike a blank Facebook event or a paid vendor workshop. Materials stay free.
+
+**One-liner (paste; do not reinvent):** Pollux is the open campaign kit an SK officer runs herself: modules, a program guide, and a site students return to after.
+
+**Tagline:** They run the session. We pack the bag.
+
+**Not this week's job:** Official pack desk (clone, publish, human commit share). That is a later side tool. Completing a kit session does not mint SK-official speech.
 
 ---
 
 ## 1. Problem Evidence
 
-**Claim:** SK desks have a mandate and a Page but no gate, so fluent rumors become unofficial official speech; AI-scale volume makes item-level reactive checking lose to firehose dynamics; grassroots leaders cannot afford enterprise listening or paid blast messaging; official share needs a human commit, not a lesson completion; agent-mediated feeds raise principal-agent risk that prompt-side guards do not solve. Active inoculation games remain evidence for pedagogy (World Bank) but are not the v0.3 product.
+**Claim:** Saturday is on the calendar. The officer has a mandate and a Page, and a blank morning: no agenda, no handouts, no URL students keep after the tarps come down. Hiring a vendor does not fit this week. Inventing a curriculum tonight does not scale to the next federation. A 45-minute kit session does not verify MIL efficacy. It is the operator job we can pack.
 
 **Evidence we have:**
 
 | Source | What it shows |
 |--------|---------------|
-| World Bank Find the Fake (Jordan, WhatsApp chatbot game) | Interactive game improved misinformation discernment vs infographics; brief game-only arm risked over-skepticism. https://doi.org/10.1596/1813-9450-10933 |
-| Scrutiny FC-3 | Claim audited; study resolves and supports pedagogy thesis |
-| Research memo AE-1..AE-5 | Routes firehose, Act, and capability-restriction claims to vault + mentorship; **not** primary Verified evidence until SCRUTINY promotes them |
+| SK / LGU youth desk mandate (institutional, not an interview) | Officers already run outreach, camps, and federation sessions. The gap is a bag they can run tonight, not a new mandate. |
+| UNESCO MIL programme (cited in IDEA) | Think critically, know the source, use media well, share ethically, fairer public talk. Maps to teachable modules, not to a quiz product. https://www.unesco.org/en/media-information-literacy |
+| World Bank Find the Fake (Jordan, WhatsApp chatbot game) | Interactive practice can beat infographics on discernment; brief game-only arms can over-skepticism. Pedagogy input only. Not proof that this kit works in PH. https://doi.org/10.1596/1813-9450-10933 |
+| Scrutiny FC-3 | World Bank claim audited for the pedagogy thesis. Does not promote F15 as an RCT. |
+| Authored kit in this repo (`docs/outreach-kit/`) | Six modules, 3Ds run-of-show, print packet notes exist as Draft artifacts. Feasibility of packing the bag is not the same as field uptake. |
+| CLR | Public school / LGU camp for under-18 is a counsel BLOCKER. Demo persona stays Mia, 19. |
 
-**Evidence we don't have (and accept for this sprint):** PWA transfer of WhatsApp study effects; LOIs from LGUs; willingness-to-pay for B2B seats in PH; field RCT that Act drills raise initiative; measured Pollux-specific prompt-injection harm; primary re-audit of Paul & Matthews / Lewandowsky for AE-1/AE-2 Verified stamps.
+**Evidence we don't have (and accept for this sprint):** Named SK officer interviews about this kit. LOIs. Willingness-to-pay for B2B seats. Field measure that a 45-minute session or a federation half-day changes sharing behavior. PWA transfer of the WhatsApp game study. Proof students return to the reader URL after outreach. We do not invent those interviews to close the gap.
 
 ---
 
@@ -31,36 +50,41 @@
 
 | Substitute | How users cope today | Our wedge |
 |------------|----------------------|-----------|
-| Static MIL PDFs / DepEd modules | Workshops, then forgotten | SK self-launch pack + human commit at post time |
-| Meltwater / enterprise listening | SK cannot afford | Keyword watch lite + curated packs |
-| Bad News / Go Viral style games | Global English web games | Optional Could-Have drill only; v1 is the SK desk |
-| Fact-check LLMs / open-web RAG | Chase volume with more generation | Refuse; published pack allowlist only |
-| AI companions / "helpful" web agents | Summarize the feed for the user | Out of scope; teach principal stance; no surfing agent |
-| SMS / WhatsApp template blasts | LGU pays carriers | Explicit non-goal until buyer funds |
+| Blank Facebook event | Post a date, hope people show, invent talking points in the hall | Packed bag: six modules, run-of-show, print, student URL |
+| Paid workshop / vendor curriculum | Wait for a trainer, pay, lose the room when the vendor leaves | Officer runs it herself this week. Materials stay free. |
+| Random quiz deck / MIL PDF dump | Print a quiz, call it a camp, no after-link | Sequenced modules plus a site students keep. Not a scored inoculation game. |
+| Doing nothing | Cancel Saturday or wing it from memory | Lowest-friction alternative. Kill if officers still choose this after seeing the bag. |
 
-**Why we still build:** Pack confinement is a gate we can ship. SK already has the operator. Distribution and ops can start on free-tier web without paid messaging. UNESCO MIL maps to commit-share behavior, not a MOOC. Pedagogy evidence (World Bank game) is kept as Could-Have, not the wedge.
+**Why we still build:** The job is this week's session, not a firehose-checker and not an official-pack tap. Print plus a student reader URL can ship without a vendor in the room. Official pack desk stays later. UNESCO showcase can show the open kit. It is not the revenue plan and not proof of MIL efficacy.
 
 ---
 
 ## 3. Feasibility in Timebox
 
-**Available time:** Startup Full docs this session; product MVP weeks (not hours).
+**Available time:** This week for a run-ready bag (print + reader URL + 18+ demo). In-app kit runner may stay flag-off. Official pack desk is out of the must-ship cut.
 
-**Must ship for demo:** Cloneable flood template; SK publish; human commit share and refuse; paper card QR. Not a game.
+**Must ship for demo:** Six modules. 3Ds run-of-show. Print packet. Student reader URL. 18+ demo (Mia). Not a scored game. Not a live under-18 camp. Not official pack publish as the proof.
+
+**Three examples (logistics clocks, not efficacy):**
+
+| Example | Format | What must work |
+|---------|--------|----------------|
+| Barangay 45m | `barangay_45m` | Officer runs the six modules from print in a hall or covered court. Quarantine labels stay. Students leave with the reader URL. |
+| Federation half-day | `camp_halfday` (SK federation / officer room) | Same six slugs, more Duplicate time. 18+ until counsel clears a youth camp. Packet goes home. |
+| Student after | Reader URL | After the tarps come down, a student can open the published kit site. Kit text is not SK-official crisis canon. |
 
 | Workstream | Estimate | Risk |
 |------------|----------|------|
-| Canon desk + templates | 1-2 weeks | Approval workflow ambiguity (G-6) |
-| Commit share (PRD-F10) | Same slice as publish | Proof of official post vs in-app event |
-| Auth + roles | 3-5 days | Supabase free pause |
-| Launch checklist + paper card | 2-4 days | Print/QR on cheap phones |
-| Injection vignette (PRD-F11) | Content only (Could-Have) | Scope creep into live agent |
-| Optional drill (PRD-F12) | After MVP | Do not block launch on a lesson |
-| Telegram adapter | After MVP core (Should-Have) | **Telegram first** (G-4); not MVP-blocking |
+| Six modules (already authored) | Hours to freeze copy, not weeks to invent | Scope creep into F12 scoring or live crisis facts |
+| 3Ds run-of-show | Hours to keep two clocks consistent | Treating the clock as an RCT |
+| Print packet | Hours to print HTML/PDF for the table | Cheap-phone QR; 3G dies; mixing canon hotlines into kit pages |
+| Student reader URL | Days if a published reader exists; print fallback if not | Draft kit leaking as "official"; open-web RAG temptation |
+| 18+ demo | Same slice as table props | Soft-launching a minor camp despite CLR |
+| Official pack desk | Later | Do not spend this week's must-ship on clone/publish/commit |
 
-**Biggest commercial unknown:** Whether SK officers will self-serve without a workshop (launch-without-us). Secondary: whether buyers demand an AI oracle Pollux refuses. Tertiary: WhatsApp blast reach vs PWA.
+**Biggest unknown:** Whether an officer will run Saturday from the bag without us. Secondary: whether buyers demand a fact-check oracle or a paid workshop Pollux refuses. Tertiary: whether students actually reopen the URL.
 
-**Mitigation:** Pilot with one SK desk; sell official-share events, not blast reach. Prefer OSS self-serve first; B2G DFY ($4k) later. Telegram user-initiated bot is a later distribution hedge. Hold the no-open-web line.
+**Mitigation:** Demo the bag, not interviews we do not have. Keep print as the flag-off path. Hold 18+ for public demo. Do not block the kit on desk launch. Prefer OSS self-serve; B2G DFY later.
 
 ---
 
@@ -68,13 +92,16 @@
 
 | Kill signal | Status (Go / Pivot / Stop) |
 |-------------|----------------------------|
-| Cannot ship pack publish without LLM spend | Go (architecture forbids it) |
-| First pilot refuses curated packs / demands open AI Q&A on crisis | Pivot (hold line or stop LGU path) |
-| Commercial host cost exceeds contribution before first paid seat (UES-D1) | Stop paid growth; stay prototype on Hobby |
-| Team expands into general web-surfing agent to "solve" agent-era narrative | Stop that path; return to pack gate + human commit |
-| Product slides back into a contest game as Must-Have | Stop; restore SK self-launch cut line |
+| Must-ship this week is redefined as official pack tap | Stop; restore campaign kit cut line |
+| Cannot demo six modules + run-of-show + print + student URL with an 18+ persona | Stop the showcase claim until the bag is on the table |
+| No one outside the team can repeat the IDEA one-liner after hearing it once | Pivot copy to VOICE paste lines; do not invent a second slogan |
+| Team invents SK interviews or an RCT from the 45-minute clock | Stop that evidence; keep the honesty gap |
+| Materials get paywalled or a vendor is required to run Saturday | Stop; UVP is free bag, officer runs it |
+| Public under-18 school/LGU camp ships before counsel | Stop that path; demo stays 18+ |
+| Kit text is treated as SK-official crisis canon | Pivot back to dual allowlist; desk remains later |
+| Product slides into a contest quiz as Must-Have | Stop; restore campaign kit, not F12 |
 
-**Decision:** Go; SK self-launch and bootstrap doctrine hold. Game is Could-Have. UNESCO is showcase of Pollux + Seekers Guild, not the reason to exist. Pricing and host locked provisional in GTM/UES (2026-07-15). Launch-without-us, WTP, and named pilot (G-1) remain open. AE claims stay Unverified until primary checks land.
+**Decision:** Go on packing this week's bag. Pain is the blank Saturday, not a missing Meltwater seat. Official pack desk is later. UNESCO is a showcase of the open kit plus Seekers Guild as partner, not the reason the product exists. Named pilot and WTP remain open. Do not close those with fake interviews.
 
 ---
 
@@ -82,17 +109,19 @@
 
 | Asset (from IDEA) | Reaction | Change requested |
 |-------------------|----------|------------------|
-| pollux-lesson.png | Calm, readable; teal OK | Keep; avoid confetti |
-| pollux-leader.png | Pack list clear | Keep; no Meltwater-style dashboards |
+| pollux-lesson.png | Calm; reads as a drill, not the campaign bag | Keep as Could-Have drill reference; do not lead with it |
+| pollux-leader.png | Pack list is a later-tool desk frame | Keep for the side tool; kit screens still need a concept pass |
 
-**Visual go/no-go:** Go for peer-led calm direction.
+**Visual go/no-go:** Direction go for peer-led calm. Headline visuals for v0.5 should show modules, run-of-show, print, student URL. Do not lead with official-pack tap chrome.
 
 ---
 
 ## Self-Check
 
-- [x] At least one piece of real evidence cited
+- [x] At least one piece of real evidence cited (not invented interviews)
 - [x] Kill criteria are concrete
-- [x] Feasibility table fits startup framing
-- [x] No em-dashes
-- [x] Next suggested doc: BRD / UES / PRD
+- [x] Kill set includes audience one-liner fail
+- [x] Feasibility table fits this week's bag, not the later desk
+- [x] No em dashes
+- [x] UVP and one-liner pasted from campaign OS / VOICE
+- [x] Next suggested doc: PRD (kit Must-Have) / GTM (channels) / CLR (18+ hold)
