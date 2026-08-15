@@ -1,67 +1,102 @@
 # Idea Brief (IDEA)
 
 **Project:** Pollux
-**Date:** 2026-07-15
-**Version:** 0.1
+**Date:** 2026-08-15
+**Version:** 0.3
 **Owner:** Pollux founding team
 **Status:** Draft
 **Last reconciled:** N/A (not yet reconciled with reality)
-**Event / context:** Startup build. Bootstrap digital-trust company. UNESCO Youth Hackathon is optional distribution, not the product goal.
+**Event / context:** Real SK/LGU product. Seekers Guild is the open community that stewards it. UNESCO Global Youth Hackathon 2026 is the first showcase venue, not the reason the product exists.
+**Research input:** [research-pollux-agent-era-mil.md](research-pollux-agent-era-mil.md) (2026-08-13); UNESCO MIL programme (2026-08-15)
 
 ---
 
 ## 1. The Spark
 
-**Production intent:** Real product from day one. Ship a deployable PWA with auth, tests, observability, and rollback. Demo proves the inoculation loop. No throwaway mock.
+**Production intent:** Real product from day one. Ship a deployable PWA with auth, tests, observability, and rollback. Demo proves an SK officer can launch a local pack herself and share it as official. No throwaway mock. No contest-only game.
 
-**One-line pitch:** Pollux teaches youth to spot manipulation techniques through a short gamified lesson, and gives local youth leaders a lightweight way to watch and share verified crisis facts without paying for messaging or enterprise listening tools.
+**One-line pitch:** Pollux is an open-source aide Sangguniang Kabataan and LGU youth desks launch themselves: they publish a local official-information pack, and only a human officer can share it as SK-official.
 
-**Problem:** Reactive fact-checking arrives after falsehoods stick. Passive media literacy fails to change sharing behavior. Low-income communities often meet rumor and crisis info only through chat apps, while paid tools (SMS blasts, Meltwater, WhatsApp template campaigns) price out the grassroots operators who need them most.
+**Problem:** Fluent rumors in barangay chats become de facto government voice because SK officers have a Page and a mandate but no gate. Reactive fact-checking arrives after falsehoods stick and cannot race AI-scale volume. Paid blast tools price out the desks that need them. Passive MIL lectures do not change what an officer posts at 2 a.m. during a flood. Youth outside Manila rarely get to shape the tools they are asked to use.
 
-**Insight (why us, why now):** Active, interactive prebunking beats passive tips. World Bank field work on WhatsApp inoculation games showed interactive play improved discernment where static infographics did not. We can deliver that loop on a free-tier web PWA first, keep the game rule-based, and sell B2G/B2B licenses later. Credibility-graph TrustOps is the Phase 2 platform, not the cold start.
+**Insight (why us, why now):** UNESCO MIL is not a quiz. It is critical thinking, source-checking, safe use, ethical share, and public talk that is fair ([Media and Information Literacy](https://www.unesco.org/en/media-information-literacy)). Those goals belong in the SK officer's hand at the moment she posts, not in a lesson she finishes once. The solvable layer is keeping the human as principal: published packs as live canon, a human commit before official share, and crisis limits enforced outside any model. SK already has the public role. Pollux makes that role executable. Seekers Guild makes the aide open so seekers in the provinces can contribute without moving to a major hub. We do not build a fact-check LLM, a companion, or a web-surfing agent. An inoculation game is not the product.
 
 ---
 
 ## 2. Who It's For
 
-**Primary user (named, specific):** Mia, 19, Sangguniang Kabataan information officer in a flood-prone barangay. She gets group-chat rumors during typhoon season and has no paid tools, only a phone and a Facebook Page.
+**Primary user (named, specific):** Mia, 19, Sangguniang Kabataan information officer in a flood-prone barangay. She has a phone, a Facebook Page, and no paid tools.
 
-**Their moment of pain:** A fake evacuation map spreads in the barangay chat. She cannot tell who to trust, and she has no budget for SMS or Meltwater.
+**Their moment of pain:** A fake evacuation map spreads in the barangay chat. The post is fluent and repeated. She needs something she can launch herself and post as SK-official. A workshop next month does not help tonight.
 
-**Success in their words:** "I finished a ten-minute game that taught me the tricks, and I can post the official flood routes from a pack our LGU already approved."
+**Success in their words:** "I launched our pack myself. When the fake map hit, I posted the official version. Nothing else counts as SK-official."
+
+**Secondary user:** A seeker outside a major hub. They file feedback, a template gap, a code fix, or an SK introduction through Seekers Guild. They do not publish that barangay's facts. Success: "I helped from my province. I did not need to sit in Manila."
 
 ---
 
 ## 3. Scope & Cut Line
 
+**Three roles (do not collapse):**
+
+| Role | Owns | Does not own |
+|------|------|----------------|
+| SK / LGU youth desk | Pack facts, Page, official speech | Pollux brand on their Page |
+| Pollux | Gate, templates, version pin, commit share | Barangay hotlines and routes |
+| Seekers Guild | Contributor community, partnerships, OSS stewardship | Official SK speech; required for launch |
+
+**Launch-without-us test:** If an SK officer cannot finish create org, clone template, fill local fields, publish, copy link or print card, post from her Page, without a Guild workshop, the product failed.
+
 **In scope for this sprint:**
 
 | # | Capability | Demo-critical? |
 |---|------------|----------------|
-| 1 | Rule-based inoculation game on mobile web PWA (emotion appeal, false expert, digital manipulation; true vs false vignettes; score + badges) | Yes |
-| 2 | Curated crisis/MIL content pack viewer (admin-published, versioned, no open-web RAG) | Yes |
-| 3 | SK / youth-leader admin lite: publish pack items, simple keyword watch list, share links (no paid listening) | Yes |
-| 4 | Auth (email/magic link or OAuth), roles: learner / leader / admin | Yes |
-| 5 | Optional Telegram bot adapter for the same game loop (user-initiated) | No |
+| 1 | Canon desk: draft, publish, version pin, archive; cloneable templates (flood, election rumor, official notices) | Yes |
+| 2 | Published-only pack read (SQL + service gate; no open-web RAG) | Yes |
+| 3 | SK self-launch: org space, launch checklist, paper card with QR | Yes |
+| 4 | Human commit share: official link or refuse; records `canon_share` / `canon_refuse` | Yes |
+| 5 | Auth; roles: reader / leader / admin; identity from session | Yes |
+| 6 | OSS contribution path: feedback + template PRs; SK facts stay SK-owned | No (Should-Have in product; Must-Have in narrative) |
+| 7 | Helper draft that can only cite published items | No (Should-Have) |
+| 8 | Optional Telegram adapter for pack share, user-initiated | No |
+| 9 | Optional short inoculation drill | No (Could-Have; not the brand) |
 
-**Explicitly out of scope (v0):** SMS broadcast; WhatsApp cold templates at our cost; zero-rated Meta as a product promise; Meltwater or paid social listening; algorithmic credibility graph / TrustOps API; MTF ad-tech billing; open-ended LLM crisis Q&A.
+**Explicitly out of scope (v0):** SMS broadcast; WhatsApp cold templates at our cost; zero-rated Meta as a product promise; Meltwater or paid social listening; algorithmic credibility graph / TrustOps API; open-ended LLM crisis Q&A; general web-surfing agent; AI companion as primary path; racing AI volume with a fact-check model; Guild required to publish; Guild logo as the SK Page identity; intercepting Facebook forward.
 
-**If we only ship one thing:** The comprehensive inoculation game on PWA with score feedback and at least one true-news calibration vignette per technique.
+**If we only ship one thing:** Canon desk plus cloneable templates plus human commit share, on a phone, that an SK officer can launch without us.
+
+**UNESCO MIL as product behavior (not a curriculum):**
+
+| MIL goal | Product behavior |
+|----------|------------------|
+| Think critically | Pause before official share: who made this, why, is it in the pack |
+| Spot fake news | If it is not in the published pack, it is not official. No fact-check model |
+| Know the source | Publisher, date, version, why the item is in the pack |
+| Use media well | PWA, no scrape, minimize youth PII; CLR still blocks public launch for under-18 |
+| Share ethically | Human commit; refuse-forward is first-class; no auto-post |
+| Build a better society | SK mandate made executable; Guild extends contribution beyond NCR |
+
+**Licenses (when code and templates exist):** Apache-2.0 for code. CC-BY-4.0 for empty template shells. SK-published facts are not in the public repo unless that SK contributes a sanitized template.
 
 ---
 
 ## 4. Success & Judging Criteria
 
-**How we win (metrics or rubric):** Startup readiness, not a contest score. Learners complete a full lesson. Leaders can publish a pack. Monthly burn stays under about $20 until a paid pilot. Production Readiness Gate items are either done or explicitly owned.
+**How we win (metrics or rubric):** Startup readiness, not a contest score. An SK officer publishes a pack she filled. She records a canon share or refuse in an incident window. Monthly burn stays under about $20 until a paid pilot. Production Readiness Gate items are either done or explicitly owned. UNESCO showcase proves the SK-launch story. It does not replace a paid pilot.
 
 | Criterion | How we hit it |
 |-----------|---------------|
-| Cognitive effect (product north star) | Lesson design mirrors proven active inoculation pattern; QAD measures completion and post-lesson discernment quiz |
-| Feasibility on bootstrap budget | Free-tier stack; no paid messaging; rule-based game core |
+| North star | `canon_share` and `canon_refuse` during a live incident window, by SK org |
+| Principal stance | Pack confinement enforced as gate; official share is human-only |
+| Self-launch | Launch-without-us test passes on a cheap phone |
+| Open community | Seekers outside major hubs can contribute without being the publisher |
+| Feasibility on bootstrap budget | Free-tier stack; no paid messaging |
 | Ethical channel stance | Low-bandwidth PWA; zero-rated Meta is a non-goal; CLR covers consent and youth data |
-| Path to revenue | B2G/B2B licensing documented in UES/GTM; Phase 2 TrustOps documented, not built |
+| Path to revenue | OSS self-serve is the community rung; paid DFY / hosted LGU install later (UES/GTM) |
 
-**Demo script (30-90 seconds):** Open Pollux on phone. Start "Spot the Trick" lesson. Mark a vignette as manipulative, see why, get a badge. Switch to leader view, open the barangay flood pack, copy a share link. Show burn dashboard or README cost note: $0 messaging.
+**Demo script (30-90 seconds):** Open Pollux on phone as Mia. Create org. Clone flood template. Fill three local fields. Publish. Hit commit share. Copy official link. Show refuse path for a rumor not in the pack. Show paper card QR. Name Seekers Guild as the community, not as the Page.
+
+**UNESCO jury sentence:** Pollux is an open-source aide SK councils launch themselves. Seekers Guild is the youth community that stewards it, especially seekers outside major hubs. Only a human SK officer can share a pack as official, so fluent rumors do not become government voice.
 
 ---
 
@@ -69,16 +104,16 @@
 
 *Lo-fi references generated before build. Link files; do not describe what you haven't generated.*
 
-**Visual direction (one sentence):** Peer-led, calm, high-intent mobile screens. No purple SaaS chrome, no crisis-red panic UI.
+**Visual direction (one sentence):** Peer-led, calm, high-intent mobile screens. SK-owned, not Guild-branded chrome, no crisis-red panic UI.
 
 **Tooling used:** GenerateImage (concept frames). Impeccable shape deferred to DSD lock.
 
 | Screen / section | Asset path | Notes |
 |------------------|------------|-------|
-| Learner lesson (vignette + choices) | [docs/assets/concept/pollux-lesson.png](assets/concept/pollux-lesson.png) | Teal on warm paper; choice buttons |
-| Leader pack / watch lite | [docs/assets/concept/pollux-leader.png](assets/concept/pollux-leader.png) | Pack list + share; no dashboard clutter |
+| Leader pack / launch | [docs/assets/concept/pollux-leader.png](assets/concept/pollux-leader.png) | Pack list + share; no dashboard clutter |
+| Legacy lesson frame | [docs/assets/concept/pollux-lesson.png](assets/concept/pollux-lesson.png) | Kept as Could-Have drill reference; not v1 brand |
 
-**Team decision:** Approve calm peer-led direction in DSD §0. Reject competition trophy aesthetics and dark-mode glow defaults.
+**Team decision:** Approve calm peer-led direction in DSD §0. Reject competition trophy aesthetics and dark-mode glow defaults. Reject Guild sigil on SK official share screens.
 
 ---
 
@@ -86,9 +121,13 @@
 
 | Question | Owner | Status | Resolve by |
 |----------|-------|--------|------------|
-| First pilot LGU or SK federation for content pack | Founders | Stale (open) | Before GTM lock |
+| First pilot LGU or SK federation for a live pack | Founders | Stale (open) | Before GTM lock |
 | Telegram vs Messenger for first bot adapter | Eng | **Resolved: Telegram first** | Done (2026-07-15) |
 | Whether optional LLM coaching ships in v1 or waits | Product | **Resolved: post-MVP; flag off** | Done (2026-07-15) |
+| Product spine | Product | **Resolved: SK self-launch aide, not a game** | Done (2026-08-15) |
+| Seekers Guild role | Product | **Resolved: community medium; equal UNESCO billing; not required to launch** | Done (2026-08-15) |
+| Pack approval chain (G-6) when packs are civic canon | Product | Stale (open); load-bearing under principal thesis | Before public pilot |
+| Commit-share proof (in-app event vs Page post) | Product | Open | Before PRD lock on PRD-F10 |
 
 ---
 
@@ -100,4 +139,4 @@
 - [x] Success criteria mapped (startup, not contest)
 - [x] Concept visuals linked once assets exist
 - [x] AGENTS hard bans applied (no em-dashes)
-- [x] Next suggested doc: SCRUTINY (Build the FMD gate), then VALIDATION
+- [x] Next suggested doc: PRD v0.3 (this pass), then SDD/QAD reconcile

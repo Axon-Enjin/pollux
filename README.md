@@ -4,7 +4,7 @@
 [![Stack: Next.js](https://img.shields.io/badge/Stack-Next.js%20%2B%20Supabase-black)](docs/idea-pollux.md)
 [![Docs: FMD](https://img.shields.io/badge/Docs-FMD%20v1.19.0-333)](docs/index.md)
 
-Pollux teaches youth to spot manipulation techniques through a short gamified lesson, and gives local youth leaders a lightweight way to publish verified crisis facts without paying for messaging or enterprise listening tools.
+Pollux is an open-source aide Sangguniang Kabataan and LGU youth desks launch themselves: a local official-information pack, and a human commit before anything counts as SK-official. Seekers Guild stewards contribution. An inoculation game is not the product.
 
 Built with the [Foundational Matrix Documents (FMD)](https://github.com/delatorrecj/fmd) workflow (v1.19.0).
 
@@ -21,11 +21,15 @@ python D:/PROJECTS/FMD/scripts/check.py .
 
 ## What it does
 
-- Rule-based inoculation game on a mobile-first PWA (score + badges)
-- Curated, versioned crisis/MIL content packs (no open-web RAG)
-- SK / youth-leader admin lite: publish packs, keyword watch, share links
-- Auth with learner / leader / admin roles
-- Optional Telegram bot for the same game loop (user-initiated)
+- SK self-launch canon desk: clone templates, fill local facts, publish, version pin
+- Human commit before official share (`canon_share` / `canon_refuse`)
+- Published-only packs (no open-web RAG, no fact-check LLM)
+- Launch checklist and paper QR card for 3G
+- Auth with reader / leader / admin roles
+- Open contribution: feedback, templates, code, partnerships ([CONTRIBUTING.md](CONTRIBUTING.md))
+- Optional Telegram pack read/share later (user-initiated)
+
+Code: Apache-2.0. Empty templates: CC-BY-4.0. SK-published facts stay with that SK.
 
 ## Documentation
 
@@ -45,15 +49,15 @@ python D:/PROJECTS/FMD/scripts/check.py .
 
 ## Demo
 
-Open the PWA (when deployed) → finish Spot the Trick → as leader, open a flood pack and copy a share link. Burn note: $0 messaging. Full script lives in IDEA §4.
+Open the PWA (when deployed) as an SK officer → clone a flood template → publish → commit official share or refuse. Paper card if 3G dies. Full script lives in IDEA §4 and [docs/pitch-pollux.md](docs/pitch-pollux.md).
 
 ## Team
 
-Pollux founding team · startup build · UNESCO Youth Hackathon optional distribution only
+Pollux founding team. Seekers Guild is the community medium. UNESCO Youth Hackathon 2026 is a showcase, not the reason the product exists.
 
 ## License
 
-TBD; add `LICENSE` before public release.
+[Apache-2.0](LICENSE). See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 

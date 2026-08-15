@@ -23,6 +23,8 @@
 | 8 | 2026-07-15T13:20:00Z | Recover VAL BRD UES GTM PRD DSD after API limit | business/product templates | docs/val,brd,ues,gtm,prd,dsd-pollux.md | Draft v0.1 | not run |
 | 9 | 2026-07-15T13:35:00Z | check.py scale full | check.py | voice dash fixes; materialize BRAND/DESIGN/AGENTS | green | 0 fail 0 warn |
 | 10 | 2026-07-15T15:38:00Z | Decision register write-back | n/a | IDEA PRD SCRUTINY GTM UES VAL CLR AIA BRD SDD OPS RFC BUILD README index | G-3/4/5 + pricing locked; G-1/G-6 stale | 0 fail 0 warn |
+| 11 | 2026-08-13T15:50:00Z | Agent-era MIL reframe (principal-training) | research memo + Draft patches | research-pollux-agent-era-mil.md; IDEA PRD RFC SCRUTINY VAL GTM index; mentorship-july-1/2.md | PROCEED WITH FIXES; AE claims Unverified | 0 fail 3 warn |
+| 12 | 2026-08-15T14:30:00Z | SK/LGU self-launch aide + Guild community + UNESCO packet | IDEA/PRD/GTM/VAL/SCRUTINY/RFC/PITCH | idea,prd,gtm,val,scrutiny,rfc,pitch,sdd,qad,index,README,LICENSE,CONTRIBUTING; research-pollux-unesco-proposal-2026.md | spine locked in Draft 0.3; portal submit is founder action | 0 fail 2 warn |
 
 ---
 
@@ -54,7 +56,9 @@
 |---|----------------|-------------|---------------------|
 | 1 | Minor | Parallel poteto agents can fail on API limits mid-batch | AGENTS / Playbook fan-out note |
 
-**Validator last run:** 2026-07-15; 0 failures, 0 warnings (scale full)
+**Validator last run:** 2026-08-15; 0 failures, 2 warnings (scale full) after SK-aide rewrite (row 12). Warnings: Scrutiny G34 free-text cite on R-1; SDD missing Request: shapes.
+
+**2026-08-15 reframe summary:** IDEA/PRD v0.3: SK self-launch aide; Guild as OSS community; game dropped from Must-Have. UNESCO proposal + 3-min pitch written. Portal upload remains a founder action (team names, video, PDF). No app code.
 
 ---
 

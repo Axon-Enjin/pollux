@@ -5,25 +5,30 @@
 **Author:** Pollux founding team
 **Status:** `Draft`
 **Last reconciled:** N/A (not yet reconciled with code)
-**PRD Reference:** Provisional PRD-F2 (content packs), PRD-F3 (admin lite), PRD-F5 (Telegram adapter)
+**PRD Reference:** PRD-F1 (canon desk), PRD-F2 (published pack read), PRD-F3 (self-launch kit), PRD-F5 (Telegram adapter); confinement also backs PRD-F10 commit share
 **SDD Reference:** [sdd-pollux.md](sdd-pollux.md) sections 2-5 and 8
 **RFC ID:** `pollux-rfc-001`
+**Research input:** [research-pollux-agent-era-mil.md](research-pollux-agent-era-mil.md)
 
 ---
 
 ## 1. Context & Objective
 
 **The problem this solves:**
-Pollux must run the same inoculation loop and crisis-pack reads on the web PWA first, then optionally on chat bots, without forking business logic per channel. Crisis answers must never come from an LLM or the open web. Packs need a publish workflow so leaders can draft safely and learners only see approved versions.
+Pollux must run pack publish and pack read on the web PWA first, then optionally on chat bots, without forking business logic per channel. Crisis answers must never come from an LLM or the open web. Packs need a publish workflow so leaders can draft safely and readers only see approved versions. Official share is a human commit (PRD-F10).
+
+**Product thesis (civic capability restriction):**
+Pack confinement is not an implementation footnote. It is the civic form of capability restriction: the crisis path has no open-web tool. Published packs are **live canon** (allowlist). Draft / in_review packs are **quarantine** (invisible to learners and share tokens). Hard ban: open-web RAG and LLM generation of crisis facts. Limits are enforced in SQL and the service layer (absence of tools), not as prompt advice a model can be talked out of. Irreversible commit (publish, share-as-official) stays a human principal action.
 
 **Reference in PRD/SDD:**
-This RFC implements provisional PRD-F2, PRD-F3, and PRD-F5. Channel priority locks Scrutiny G-4 (Telegram first). Pack approval chain (G-6) stays open; this RFC covers publish confinement and version pin only.
+This RFC implements PRD-F1, PRD-F2, PRD-F3, and PRD-F10. Channel priority locks Scrutiny G-4 (Telegram first). Pack approval chain (G-6) stays open and is load-bearing; this RFC covers publish confinement and version pin only.
 
 **Success criteria:**
-- Web PWA is the primary client. All lesson score and pack read logic lives in shared services, not in UI or bot code.
+- Web PWA is the primary client. Pack read and publish logic lives in shared services, not in UI or bot code.
 - Telegram is the first Should-Have adapter behind `ChannelAdapter`. Messenger/WhatsApp stay Could-Have stubs.
 - Crisis UI and bot replies for facts resolve only to `content_packs.status = 'published'` at a pinned `version`.
-- Draft / in_review packs are invisible to learners and to public share tokens.
+- Draft / in_review packs are invisible to readers and to public share tokens.
+- No crisis code path can call open-web fetch, RAG, or an LLM for facts (gate, not polite refusal).
 
 ---
 
@@ -183,11 +188,14 @@ Web does not need a full adapter class. Server actions call core services direct
 
 ### Pack confinement rules (normative)
 
-1. Crisis and MIL factual answers are served only from `pack_items` of a published pack version.
-2. Open-web fetch, RAG, and LLM generation of crisis facts are forbidden.
+1. Crisis and MIL factual answers are served only from `pack_items` of a published pack version (**live canon allowlist**).
+2. Open-web fetch, RAG, and LLM generation of crisis facts are forbidden (**hard ban**; absence of capability, not prompt text).
 3. Optional LLM coach (SDD §8) must not receive pack bodies or user crisis questions.
 4. Bot free-text that looks like a crisis question maps to pack search / keyword match over published items, or a fixed refuse+redirect-to-pack message. Never to a model.
 5. Untrusted user text is delimited and never concatenated into system prompts as instructions.
+6. Draft / in_review content is **quarantine**: never pasteable into learner UI, share tokens, or any helper brief.
+7. Publish and official share remain human principal actions; no automated agent may flip `status` to `published` or mint an official share without an authenticated leader/admin session.
+8. A general web-surfing agent is out of scope for this RFC and for v1 Pollux. Injection pedagogy (PRD-F11) is authored vignette content only.
 
 ---
 
@@ -195,10 +203,12 @@ Web does not need a full adapter class. Server actions call core services direct
 
 | Option | Why Rejected |
 |--------|-------------|
-| Chat-first (Telegram primary, web later) | Pedagogy and offline lesson cache favor PWA. World Bank evidence was WhatsApp-native, but our bootstrap budget and zero-rated non-goal make web the honest v1. Telegram remains Should-Have. |
+| Chat-first (Telegram primary, web later) | SK self-launch on a phone favors PWA. Telegram remains Should-Have for pack read/share. |
 | Messenger as first bot | Scrutiny G-4 **resolved Telegram first** (2026-07-15). Telegram Bot API is simpler for a user-initiated webhook prototype without Page review friction. Messenger stays Could-Have. |
 | Shared mutable pack row (edit in place after publish) | Shared links and learner screens would change underfoot. Harmful for crisis routes. Version pin is required. |
-| Open-web RAG for crisis Q&A | Hallucination risk on evacuation facts. Forbidden by IDEA doctrine and Scrutiny FC-5. |
+| Open-web RAG for crisis Q&A | Hallucination risk on evacuation facts. Forbidden by IDEA doctrine and Scrutiny FC-5. Puts the guard inside the channel. |
+| Prompt-only "do not invent crisis facts" without SQL filter | Advice degrades; injection can contradict instructions. Gate must live outside the model. |
+| General web-surfing helper for learners | Imports principal-agent and prompt-injection residual loss. Out of scope; teach via vignette if needed. |
 | Per-channel fork of scoring logic | Divergent badges and scores. Adapter + shared rule engine keeps one truth. |
 
 ---

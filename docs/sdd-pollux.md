@@ -27,7 +27,7 @@
 - Single Supabase Postgres project for v1. Read replicas are debt past ~1k DAU.
 - No job queue for v1. Lesson scoring is sync. Pack publish is a transactional status flip. Optional LLM coaching (flag off) stays request-scoped or waits for a later CR.
 - Vercel Hobby only for non-commercial prototypes. Commercial pilots move to **Cloudflare Pages+Workers** before paid use (Scrutiny FC-6 / G-3 locked). Vercel Pro is the alternate.
-- RBAC is three roles (`learner`, `leader`, `admin`), not a full permission matrix.
+- RBAC is three roles (`reader`, `leader`, `admin`), not a full permission matrix. Older drafts said `learner`; treat that as `reader`.
 
 ---
 
@@ -63,11 +63,13 @@ Provisional IDs until [prd-pollux.md](prd-pollux.md) locks. Replace with PRD-sta
 
 | PRD feature | Realized by (this SDD) |
 |-------------|------------------------|
-| PRD-F1 Inoculation game | `lessons`, `vignettes`, `attempts` (§3); rule engine (§2, §4); lesson APIs (§4) |
-| PRD-F2 Content packs | `content_packs`, `pack_items` (§3); pack service published-only (§4, §5); RFC pack confinement |
-| PRD-F3 Admin lite | Leader routes; `watch_keywords`, `share_links` (§3, §4); publish workflow in RFC |
+| PRD-F1 Canon desk + templates | `content_packs`, `pack_items`, org space, template clone (§3, §4); publish workflow in RFC |
+| PRD-F2 Content packs (published-only read) | `content_packs`, `pack_items` (§3); pack service published-only (§4, §5); RFC pack confinement |
+| PRD-F3 SK self-launch kit | Launch checklist, paper card, leader routes; `share_links` (§3, §4) |
 | PRD-F4 Auth roles | Supabase Auth; `profiles.role` (§3, §5); RLS + server role checks |
+| PRD-F10 Human commit share (Must-Have) | Official share mint only after authenticated leader commit; events `canon_share` / `canon_refuse`; no agent publish (RFC rule 7) |
 | PRD-F5 Telegram adapter (Should) | `ChannelAdapter` + webhook (§4); details in [rfc-pollux-channel-packs.md](rfc-pollux-channel-packs.md) |
+| PRD-F12 Inoculation drill (Could-Have) | `lessons`, `vignettes`, `attempts` (§3); rule engine (§2, §4); not required to launch |
 
 ---
 
@@ -218,9 +220,20 @@ ChannelAdapter → same Attempt / Pack read APIs
 | PATCH | `/api/leader/packs/:id` | Edit draft / submit for review |
 | POST | `/api/leader/packs/:id/publish` | Publish (admin or delegated leader per org policy) |
 | POST | `/api/leader/watch-keywords` | Upsert keyword watch list |
-| POST | `/api/leader/share-links` | Mint share link for published pack@version |
+| POST | `/api/leader/share-links` | Mint share link for published pack@version (must follow commit) |
+| POST | `/api/leader/commit-share` | PRD-F10: `canon_share` or `canon_refuse`; official token only on share |
 | GET | `/api/share/:token` | Resolve public share (published pack snapshot) |
 | POST | `/api/channels/telegram/webhook` | Telegram updates → ChannelAdapter |
+
+```mermaid
+sequenceDiagram
+  participant Leader
+  participant API
+  participant DB
+  Leader->>API: POST commit-share
+  API->>DB: check published pack and role
+  API-->>Leader: official URL or refuse recorded
+```
 
 **External integrations:**
 
